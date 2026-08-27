@@ -1,0 +1,37 @@
+.page-hero {
+    position: relative;
+    height: 40vh;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.page-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(26, 26, 26, 0.6);
+    z-index: 1;
+}
+
+.page-hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.page-hero-content h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+.page-hero-content p {
+    color: #EAE6DF;
+    font-size: 1.15rem;
+    max-width: 600px;
+    margin: 0 auto;
+}

@@ -1,0 +1,1417 @@
+/* =========================================================
+   LANGAR BOOKING PAGE
+========================================================= */
+
+.langar-booking-page {
+  min-height: 100vh;
+
+  background: #f7f3eb;
+
+  color: #302820;
+
+  font-family:
+    "DM Sans",
+    Arial,
+    sans-serif;
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.langar-topbar {
+  position: sticky;
+  top: 0;
+
+  z-index: 1000;
+
+  height: 54px;
+
+  background: rgba(255, 255, 255, 0.98);
+
+  border-bottom: 1px solid #e8dfd2;
+
+  box-shadow:
+    0 2px 10px rgba(60, 45, 30, 0.05);
+}
+
+.langar-topbar-inner {
+  width: min(
+    860px,
+    calc(100% - 40px)
+  );
+
+  height: 100%;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+/* =========================================================
+   DASHBOARD BUTTON
+========================================================= */
+
+.dashboard-back {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 6px 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #665548;
+
+  font-family: inherit;
+
+  font-size: 11px;
+
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+}
+
+.dashboard-back:hover {
+  color: #a86613;
+}
+
+.dashboard-back svg {
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.langar-brand {
+  position: absolute;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+}
+
+.langar-brand-symbol {
+  width: 35px;
+
+  height: 35px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fff2dc;
+
+  border: 1px solid #e5c991;
+
+  color: #b96e12;
+
+  font-family: serif;
+
+  font-size: 20px;
+}
+
+.langar-brand-text {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 1px;
+}
+
+.langar-brand-text strong {
+  color: #352c25;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+.langar-brand-text span {
+  color: #a47743;
+
+  font-size: 7px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   USER
+========================================================= */
+
+.langar-user-wrapper {
+  position: relative;
+}
+
+.langar-user-button {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 4px 7px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: #493a2e;
+
+  cursor: pointer;
+
+  font-family: inherit;
+
+  transition:
+    background 0.2s ease;
+}
+
+.langar-user-button:hover {
+  background: #f5eee3;
+}
+
+.langar-user-avatar {
+  width: 28px;
+
+  height: 28px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #b36b12,
+      #d39132
+    );
+
+  color: white;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+.langar-user-name {
+  font-size: 10px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.langar-user-arrow {
+  color: #806c58;
+
+  font-size: 8px;
+
+  transition:
+    transform 0.2s ease;
+}
+
+.langar-user-arrow.open {
+  transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   USER DROPDOWN
+========================================================= */
+
+.langar-user-dropdown {
+  position: absolute;
+
+  top: calc(100% + 8px);
+
+  right: 0;
+
+  width: 205px;
+
+  padding: 8px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5dacb;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 10px 28px rgba(60, 45, 30, 0.15);
+
+  animation:
+    langarDropdown 0.18s ease;
+
+  z-index: 9999;
+}
+
+@keyframes langarDropdown {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+}
+
+
+/* =========================================================
+   DROPDOWN USER
+========================================================= */
+
+.langar-dropdown-user {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 8px;
+}
+
+.langar-dropdown-avatar {
+  width: 35px;
+
+  height: 35px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #b36b12,
+      #d39132
+    );
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.langar-dropdown-info {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+
+  min-width: 0;
+}
+
+.langar-dropdown-info strong {
+  color: #3d3025;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+.langar-dropdown-info span {
+  color: #927b62;
+
+  font-size: 8px;
+}
+
+
+/* =========================================================
+   DROPDOWN DIVIDER
+========================================================= */
+
+.langar-dropdown-divider {
+  height: 1px;
+
+  background: #eee5da;
+
+  margin: 4px 0;
+}
+
+
+/* =========================================================
+   LOGOUT
+========================================================= */
+
+.langar-logout-button {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 9px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: #a04d3e;
+
+  font-family: inherit;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.langar-logout-button:hover {
+  background: #fff1ed;
+
+  color: #8b3022;
+}
+
+.langar-logout-button svg {
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.langar-main {
+  width: min(
+    860px,
+    calc(100% - 40px)
+  );
+
+  margin: 0 auto;
+
+  padding:
+    38px
+    0
+    48px;
+}
+
+
+/* =========================================================
+   PAGE HEADING
+========================================================= */
+
+.langar-page-heading {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 24px;
+}
+
+.langar-heading-icon {
+  width: 45px;
+
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #f5e7d0;
+
+  border: 1px solid #e4c999;
+
+  color: #b36c12;
+
+  font-size: 19px;
+}
+
+.langar-eyebrow {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #a86a20;
+
+  font-size: 7px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.langar-page-heading h1 {
+  margin: 0;
+
+  color: #201914;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size: 23px;
+
+  line-height: 1.1;
+}
+
+.langar-page-heading p {
+  margin: 4px 0 0;
+
+  color: #806f60;
+
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.langar-error {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 15px;
+
+  padding: 10px 13px;
+
+  border-radius: 7px;
+
+  background: #fff0ed;
+
+  border: 1px solid #edc8bf;
+
+  color: #9a4033;
+
+  font-size: 10px;
+}
+
+.langar-error svg {
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   SUCCESS
+========================================================= */
+
+.langar-success {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 15px;
+
+  padding: 10px 13px;
+
+  border-radius: 7px;
+
+  background: #eef8f0;
+
+  border: 1px solid #c6e2cc;
+
+  color: #347346;
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   BOOKING GRID
+========================================================= */
+
+.langar-booking-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    290px;
+
+  gap: 16px;
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   BOOKING CARD
+========================================================= */
+
+.langar-booking-card {
+  background: #ffffff;
+
+  border: 1px solid #e3d8ca;
+
+  border-radius: 10px;
+
+  padding: 22px;
+
+  box-shadow:
+    0 5px 16px rgba(60, 45, 30, 0.05);
+}
+
+.booking-card-heading h2 {
+  margin: 0;
+
+  color: #241d18;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+.booking-card-heading p {
+  margin: 5px 0 0;
+
+  color: #927f6e;
+
+  font-size: 8px;
+}
+
+.booking-divider,
+.summary-divider {
+  width: 100%;
+
+  height: 1px;
+
+  background: #eae1d7;
+
+  margin: 16px 0;
+}
+
+
+/* =========================================================
+   BOOKING FIELD
+========================================================= */
+
+.booking-field {
+  margin-bottom: 18px;
+}
+
+.booking-field label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  margin-bottom: 7px;
+
+  color: #45372c;
+
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+.booking-field label svg {
+  color: #b8731c;
+
+  font-size: 10px;
+}
+
+.booking-field small {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #9a8877;
+
+  font-size: 7px;
+}
+
+
+/* =========================================================
+   DATE INPUT
+========================================================= */
+
+.date-input-wrapper {
+  width: 100%;
+}
+
+.date-input-wrapper input,
+.date-input-wrapper select {
+  width: 100%;
+
+  height: 37px;
+
+  padding:
+    0
+    10px;
+
+  border: 1px solid #ddcfbe;
+
+  border-radius: 7px;
+
+  background: #ffffff;
+
+  color: #45372c;
+
+  font-family: inherit;
+
+  font-size: 9px;
+
+  outline: none;
+
+  box-sizing: border-box;
+
+  transition:
+    border 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.date-input-wrapper input:focus,
+.date-input-wrapper select:focus {
+  border-color: #c98a35;
+
+  box-shadow:
+    0 0 0 3px rgba(201, 138, 53, 0.10);
+}
+
+
+/* =========================================================
+   AVAILABILITY
+========================================================= */
+
+.availability-box {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  min-height: 58px;
+
+  margin-bottom: 18px;
+
+  padding: 9px 12px;
+
+  background: #faf6ef;
+
+  border: 1px solid #e5d4bd;
+
+  border-radius: 8px;
+}
+
+.availability-icon {
+  width: 34px;
+
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #f5e6ce;
+
+  color: #b4731a;
+
+  font-size: 13px;
+}
+
+.availability-content {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.availability-content span {
+  color: #887563;
+
+  font-size: 7px;
+}
+
+.availability-content strong {
+  color: #2c6b42;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   PEOPLE COUNTER
+========================================================= */
+
+.people-field {
+  margin-bottom: 18px;
+}
+
+.people-counter {
+  height: 37px;
+
+  display: grid;
+
+  grid-template-columns:
+    38px
+    1fr
+    38px;
+
+  overflow: hidden;
+
+  border: 1px solid #ddcfbe;
+
+  border-radius: 7px;
+
+  background: #ffffff;
+}
+
+.people-counter button {
+  border: none;
+
+  background: #faf6ef;
+
+  color: #b78b52;
+
+  font-size: 17px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.people-counter button:hover:not(:disabled) {
+  background: #f3e4cd;
+
+  color: #9d6010;
+}
+
+.people-counter button:disabled {
+  color: #cdbda9;
+
+  cursor: not-allowed;
+}
+
+.people-counter span {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #382d25;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   CONFIRM BUTTON
+========================================================= */
+
+.confirm-booking-button {
+  width: 100%;
+
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #c5b9a9;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.confirm-booking-button:not(:disabled) {
+  background: #a96c18;
+}
+
+.confirm-booking-button:not(:disabled):hover {
+  background: #915a0d;
+
+  transform: translateY(-1px);
+}
+
+.confirm-booking-button:disabled {
+  cursor: not-allowed;
+
+  opacity: 0.9;
+}
+
+
+/* =========================================================
+   BOOKING SPINNER
+========================================================= */
+
+.booking-spinner {
+  width: 11px;
+
+  height: 11px;
+
+  border: 2px solid rgba(255,255,255,0.45);
+
+  border-top-color: #ffffff;
+
+  border-radius: 50%;
+
+  animation:
+    bookingSpin 0.7s linear infinite;
+}
+
+@keyframes bookingSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =========================================================
+   SUMMARY CARD
+========================================================= */
+
+.langar-summary-card {
+  background: #ffffff;
+
+  border: 1px solid #e3d8ca;
+
+  border-radius: 10px;
+
+  padding: 18px;
+
+  box-shadow:
+    0 5px 16px rgba(60, 45, 30, 0.05);
+}
+
+.summary-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+}
+
+.summary-icon {
+  width: 36px;
+
+  height: 36px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #f6e8cf;
+
+  color: #ae6d17;
+
+  font-size: 14px;
+}
+
+.summary-header span {
+  display: block;
+
+  margin-bottom: 2px;
+
+  color: #a56b27;
+
+  font-size: 6px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.summary-header h2 {
+  margin: 0;
+
+  color: #271f19;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   SUMMARY ROW
+========================================================= */
+
+.summary-row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 13px;
+}
+
+.summary-row-icon {
+  width: 26px;
+
+  height: 26px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 6px;
+
+  background: #faf3e7;
+
+  color: #bd7920;
+
+  font-size: 10px;
+
+  flex-shrink: 0;
+}
+
+.summary-row div:last-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.summary-row small {
+  color: #998675;
+
+  font-size: 6px;
+}
+
+.summary-row strong {
+  color: #49392c;
+
+  font-size: 8px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   SUMMARY NOTICE
+========================================================= */
+
+.summary-notice {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 7px;
+
+  padding: 9px;
+
+  border-radius: 7px;
+
+  background: #faf6ef;
+
+  color: #917d68;
+
+  font-size: 7px;
+
+  line-height: 1.5;
+}
+
+.summary-notice svg {
+  color: #987d5e;
+
+  font-size: 9px;
+
+  flex-shrink: 0;
+
+  margin-top: 1px;
+}
+
+
+/* =========================================================
+   SUMMARY SPIRITUAL
+========================================================= */
+
+.summary-spiritual {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 6px;
+
+  margin-top: 17px;
+
+  color: #a76717;
+
+  font-size: 7px;
+}
+
+.summary-spiritual span {
+  font-family: serif;
+
+  font-size: 19px;
+}
+
+
+/* =========================================================
+   INFO CARDS
+========================================================= */
+
+.langar-info-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 10px;
+
+  margin-top: 18px;
+}
+
+.langar-info-card {
+  min-height: 52px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 8px;
+
+  padding: 11px;
+
+  background: #ffffff;
+
+  border: 1px solid #e4d9cb;
+
+  border-radius: 8px;
+}
+
+.langar-info-card > svg {
+  color: #3e8a56;
+
+  font-size: 11px;
+
+  flex-shrink: 0;
+
+  margin-top: 1px;
+}
+
+.langar-info-card h3 {
+  margin: 0;
+
+  color: #4a3a2d;
+
+  font-size: 8px;
+
+  font-weight: 600;
+}
+
+.langar-info-card p {
+  margin: 4px 0 0;
+
+  color: #998878;
+
+  font-size: 6px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.langar-footer {
+  min-height: 68px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 5px;
+
+  background: #ffffff;
+
+  border-top: 1px solid #e3d8ca;
+
+  color: #8e7c6b;
+
+  font-size: 7px;
+}
+
+.langar-footer p {
+  margin: 0;
+}
+
+.langar-footer span {
+  color: #a76214;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .langar-main {
+    width: min(
+      700px,
+      calc(100% - 30px)
+    );
+
+    padding-top: 30px;
+  }
+
+  .langar-booking-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .langar-summary-card {
+    order: 2;
+  }
+
+  .langar-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .langar-topbar-inner {
+    width: calc(100% - 30px);
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .langar-topbar {
+    height: 58px;
+  }
+
+  .langar-topbar-inner {
+    width: calc(100% - 20px);
+  }
+
+  .dashboard-back span {
+    display: none;
+  }
+
+  .dashboard-back {
+    width: 30px;
+
+    height: 30px;
+
+    justify-content: center;
+  }
+
+  .langar-brand {
+    position: static;
+
+    transform: none;
+
+    margin: 0 auto;
+  }
+
+  .langar-brand-symbol {
+    width: 31px;
+
+    height: 31px;
+
+    font-size: 18px;
+  }
+
+  .langar-brand-text strong {
+    font-size: 9px;
+  }
+
+  .langar-brand-text span {
+    font-size: 6px;
+  }
+
+  .langar-user-name {
+    display: none;
+  }
+
+  .langar-user-button {
+    padding: 3px;
+  }
+
+  .langar-user-dropdown {
+    right: -5px;
+
+    width: 190px;
+  }
+
+  .langar-main {
+    width: calc(100% - 24px);
+
+    padding:
+      25px
+      0
+      35px;
+  }
+
+  .langar-page-heading {
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+  }
+
+  .langar-heading-icon {
+    width: 40px;
+
+    height: 40px;
+
+    font-size: 16px;
+  }
+
+  .langar-page-heading h1 {
+    font-size: 20px;
+  }
+
+  .langar-page-heading p {
+    font-size: 8px;
+
+    line-height: 1.5;
+  }
+
+  .langar-booking-card {
+    padding: 16px;
+  }
+
+  .langar-summary-card {
+    padding: 16px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .langar-brand-text {
+    display: none;
+  }
+
+  .langar-page-heading h1 {
+    font-size: 19px;
+  }
+
+  .langar-page-heading p {
+    font-size: 7px;
+  }
+
+  .langar-info-card {
+    padding: 9px;
+  }
+}
+
+.date-input-wrapper select {
+  cursor: pointer;
+}

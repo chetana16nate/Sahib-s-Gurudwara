@@ -1,0 +1,644 @@
+.user-login-page {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            rgba(247, 243, 232, 0.94),
+            rgba(247, 243, 232, 0.97)
+        ),
+        url('/waheguru-logo.jpg') center / cover no-repeat;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.user-login-card {
+    width: 100%;
+    max-width: 470px;
+
+    padding: 38px;
+
+    background: #ffffff;
+
+    border-radius: 24px;
+
+    border: 1px solid rgba(184, 137, 53, 0.18);
+
+    box-shadow:
+        0 20px 65px rgba(0, 0, 0, 0.12);
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.user-login-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.user-login-logo {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f7ecd8;
+
+    border: 2px solid #c79a4a;
+
+    box-shadow:
+        0 7px 20px rgba(168, 120, 36, 0.12);
+}
+
+.user-login-logo span {
+    color: #a87824;
+
+    font-size: 36px;
+
+    line-height: 1;
+}
+
+.user-login-header h1 {
+    margin: 0 0 9px;
+
+    color: #302c27;
+
+    font-size: 29px;
+
+    line-height: 1.25;
+
+    font-weight: 700;
+}
+
+.user-login-header p {
+    margin: 0 auto;
+
+    max-width: 370px;
+
+    color: #777067;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.user-login-error {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    margin-bottom: 20px;
+
+    box-sizing: border-box;
+
+    border-radius: 10px;
+
+    background: #fff1f1;
+
+    border: 1px solid #e8b7b7;
+
+    color: #a32323;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.user-login-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 19px;
+}
+
+.user-login-field {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.user-login-field label {
+    color: #3b3731;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.user-login-input {
+    width: 100%;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 0 14px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #d8d2c8;
+
+    border-radius: 12px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.user-login-input:focus-within {
+    border-color: #b88935;
+
+    box-shadow:
+        0 0 0 3px rgba(184, 137, 53, 0.12);
+}
+
+.user-login-input > svg {
+    flex-shrink: 0;
+
+    color: #a87824;
+}
+
+.user-login-input input {
+    width: 100%;
+    height: 100%;
+
+    min-width: 0;
+
+    padding: 0;
+
+    border: 0;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #302c27;
+
+    font-size: 15px;
+}
+
+.user-login-input input::placeholder {
+    color: #aaa39a;
+}
+
+.user-login-input input:disabled {
+    cursor: not-allowed;
+
+    opacity: 0.65;
+}
+
+
+/* =========================================
+   PASSWORD TOGGLE
+========================================= */
+
+.user-login-password-toggle {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 4px;
+
+    border: 0;
+
+    background: transparent;
+
+    color: #777067;
+
+    cursor: pointer;
+}
+
+.user-login-password-toggle:hover {
+    color: #a87824;
+}
+
+
+/* =========================================
+   OPTIONS
+========================================= */
+
+.user-login-options {
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin-top: -7px;
+}
+
+.forgot-password-link {
+    color: #a87824;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.forgot-password-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.user-login-button {
+    width: 100%;
+
+    min-height: 53px;
+
+    margin-top: 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    border: 0;
+
+    border-radius: 12px;
+
+    background: #a87824;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.user-login-button:hover:not(:disabled) {
+    background: #90681f;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 8px 20px rgba(144, 104, 31, 0.2);
+}
+
+.user-login-button:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.user-login-button:disabled {
+    opacity: 0.65;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   SPINNER
+========================================= */
+
+.login-spinner {
+    width: 17px;
+    height: 17px;
+
+    border-radius: 50%;
+
+    border: 2px solid rgba(255, 255, 255, 0.4);
+
+    border-top-color: #ffffff;
+
+    animation: loginSpin 0.7s linear infinite;
+}
+
+@keyframes loginSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =========================================
+   REGISTER
+========================================= */
+
+.user-login-register {
+    text-align: center;
+
+    margin-top: 27px;
+
+    padding-top: 23px;
+
+    border-top: 1px solid #eee8df;
+}
+
+.user-login-register p {
+    margin: 0 0 8px;
+
+    color: #777067;
+
+    font-size: 14px;
+}
+
+.register-link {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    color: #a87824;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   ADMIN
+========================================= */
+
+.user-admin-section {
+    margin-top: 23px;
+
+    text-align: center;
+}
+
+.user-admin-divider {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 14px;
+
+    color: #a29a8f;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.8px;
+}
+
+.user-admin-divider::before,
+.user-admin-divider::after {
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background: #ebe5dc;
+}
+
+.user-admin-section p {
+    max-width: 350px;
+
+    margin: 0 auto 11px;
+
+    color: #898177;
+
+    font-size: 12px;
+
+    line-height: 1.55;
+}
+
+.admin-login-link {
+    color: #665d52;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.admin-login-link:hover {
+    color: #a87824;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   SPIRITUAL FOOTER
+========================================= */
+
+.user-login-spiritual {
+    margin-top: 27px;
+
+    padding-top: 22px;
+
+    border-top: 1px solid #eee8df;
+
+    text-align: center;
+}
+
+.user-login-spiritual span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #b88935;
+
+    font-size: 20px;
+}
+
+.user-login-spiritual p {
+    margin: 0;
+
+    color: #7e6b4d;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.user-login-spiritual small {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #aaa196;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 600px) {
+
+    .user-login-page {
+        min-height: 100svh;
+
+        align-items: flex-start;
+
+        padding: 25px 15px;
+    }
+
+    .user-login-card {
+        margin-top: 15px;
+
+        padding: 30px 23px;
+
+        border-radius: 21px;
+    }
+
+    .user-login-header h1 {
+        font-size: 25px;
+    }
+
+    .user-login-header p {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 430px) {
+
+    .user-login-page {
+        padding: 15px 10px;
+    }
+
+    .user-login-card {
+        margin-top: 8px;
+
+        padding: 26px 18px;
+
+        border-radius: 19px;
+    }
+
+    .user-login-logo {
+        width: 60px;
+        height: 60px;
+
+        margin-bottom: 15px;
+    }
+
+    .user-login-logo span {
+        font-size: 31px;
+    }
+
+    .user-login-header {
+        margin-bottom: 24px;
+    }
+
+    .user-login-header h1 {
+        font-size: 23px;
+    }
+
+    .user-login-header p {
+        font-size: 12.5px;
+    }
+
+    .user-login-input {
+        height: 50px;
+
+        padding: 0 12px;
+    }
+
+    .user-login-button {
+        min-height: 50px;
+
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL DEVICES
+========================================= */
+
+@media (max-width: 340px) {
+
+    .user-login-page {
+        padding: 10px 7px;
+    }
+
+    .user-login-card {
+        padding: 23px 15px;
+    }
+
+    .user-login-header h1 {
+        font-size: 21px;
+    }
+
+    .user-login-header p {
+        font-size: 12px;
+    }
+}
+/* Split branding layout matching the Create Account page. */
+.user-login-page { display:flex; align-items:stretch; justify-content:initial; padding:0; background:#f7f3eb; }
+.user-login-brand { width:45%; min-height:100vh; display:grid; place-items:center; padding:50px; color:#fff; text-align:center; background:linear-gradient(rgba(58,39,20,.68),rgba(58,39,20,.72)),url("https://images.unsplash.com/photo-1609947017136-9daf32a5eb16?auto=format&fit=crop&w=1200&q=80") center/cover; }
+.user-login-brand-content { max-width:430px; }
+.user-login-brand-symbol { width:90px; height:90px; margin:0 auto 25px; border:2px solid rgba(255,255,255,.75); border-radius:50%; display:grid; place-items:center; color:#fff; font:500 48px/1 "Noto Sans Gurmukhi",serif; }
+.user-login-brand h2 { margin:0 0 15px; color:#fff; font-size:38px; }
+.user-login-brand p { margin:8px 0; color:#fff; font-size:18px; }
+.user-login-brand span { display:block; opacity:.9; font-size:15px; line-height:1.6; }
+.user-login-container { width:55%; min-height:100vh; display:flex; align-items:center; justify-content:center; padding:40px 25px; }
+.user-login-container .user-login-card { margin:0; }
+@media(max-width:800px){.user-login-brand{display:none}.user-login-container{width:100%;padding:32px 20px}}
+@media(max-width:600px){.user-login-page{min-height:100svh}.user-login-container{padding:25px 15px;align-items:flex-start}.user-login-container .user-login-card{margin-top:15px}}

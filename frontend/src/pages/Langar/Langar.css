@@ -1,0 +1,968 @@
+/* =========================================================
+   LANGAR PAGE
+========================================================= */
+
+.langar-page {
+    background: var(--color-background, #faf8f2);
+    color: var(--color-text, #302c27);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.langar-hero {
+    min-height: 470px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 20px;
+
+    background:
+        linear-gradient(
+            rgba(54, 42, 26, 0.62),
+            rgba(54, 42, 26, 0.68)
+        ),
+        url('/waheguru-logo.jpg')
+        center / cover no-repeat;
+
+    color: white;
+
+    box-sizing: border-box;
+}
+
+.langar-hero .premium-container {
+    width: 100%;
+}
+
+.langar-hero h1 {
+    max-width: 760px;
+
+    margin: 14px 0;
+
+    font-size: clamp(
+        2.2rem,
+        5vw,
+        4.2rem
+    );
+
+    line-height: 1.08;
+}
+
+.langar-hero p {
+    max-width: 650px;
+
+    margin-bottom: 30px;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* =========================================================
+   LOGIN NOTICE
+========================================================= */
+
+.langar-login-notice {
+    width: fit-content;
+
+    max-width: 100%;
+
+    margin-bottom: 24px;
+
+    padding: 11px 14px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    background:
+        rgba(255, 255, 255, 0.13);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 10px;
+
+    font-size: 13px;
+}
+
+.langar-login-notice a {
+    color: white;
+
+    font-weight: 700;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.langar-intro {
+    background: #faf8f2;
+}
+
+
+/* =========================================================
+   CAPACITY CARD
+========================================================= */
+
+.capacity-card {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 30px;
+
+    margin-bottom: 38px;
+
+    background: white;
+
+    border:
+        1px solid rgba(
+            184,
+            137,
+            53,
+            0.2
+        );
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 12px 35px rgba(
+            0,
+            0,
+            0,
+            0.06
+        );
+}
+
+.capacity-content {
+    width: 100%;
+}
+
+.capacity-card > svg {
+    flex-shrink: 0;
+
+    color: #b88935;
+}
+
+.capacity-date {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin: 10px 0;
+
+    color: #7c6748;
+
+    font-size: 14px;
+}
+
+.capacity-card h2 {
+    margin: 5px 0 15px;
+
+    font-size: 25px;
+}
+
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.progress {
+    width: 100%;
+
+    height: 11px;
+
+    overflow: hidden;
+
+    background: #eee7dc;
+
+    border-radius: 20px;
+}
+
+.progress span {
+    display: block;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #b88935,
+            #d1a758
+        );
+
+    border-radius: inherit;
+
+    transition: width 0.4s ease;
+}
+
+.available,
+.full {
+    margin: 10px 0 0;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.available {
+    color: #3c7b43;
+}
+
+.full {
+    color: #a42b2b;
+}
+
+
+/* =========================================================
+   WELCOME GRID
+========================================================= */
+
+.welcome-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.welcome-grid article {
+    padding: 25px;
+
+    background: white;
+
+    border-radius: 16px;
+
+    border:
+        1px solid #eee7dc;
+}
+
+.welcome-grid article svg {
+    width: 28px;
+
+    color: #b88935;
+
+    margin-bottom: 12px;
+}
+
+.welcome-grid h3 {
+    margin: 0 0 7px;
+
+    font-size: 18px;
+}
+
+.welcome-grid p {
+    margin: 0;
+
+    color: #756f67;
+
+    line-height: 1.6;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   REGISTRATION SECTION
+========================================================= */
+
+.langar-register {
+    background: #f2eee5;
+}
+
+.registration-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.85fr)
+        minmax(0, 1.15fr);
+
+    gap: 55px;
+
+    align-items: start;
+}
+
+.registration-layout > div:first-child {
+    padding-top: 20px;
+}
+
+.registration-layout h2 {
+    margin: 10px 0 15px;
+
+    font-size: clamp(
+        2rem,
+        4vw,
+        3rem
+    );
+
+    line-height: 1.15;
+}
+
+.registration-layout > div:first-child > p {
+    color: #756f67;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   GROUP CALLOUT
+========================================================= */
+
+.group-callout {
+    margin-top: 28px;
+
+    padding: 23px;
+
+    background: #fffaf0;
+
+    border:
+        1px solid rgba(
+            184,
+            137,
+            53,
+            0.25
+        );
+
+    border-radius: 16px;
+}
+
+.group-callout h3 {
+    margin: 0 0 8px;
+}
+
+.group-callout p {
+    margin: 0 0 16px;
+
+    color: #756f67;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   FORM WRAPPER
+========================================================= */
+
+.langar-form-wrap {
+    background: white;
+
+    padding: 32px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 45px rgba(
+            0,
+            0,
+            0,
+            0.08
+        );
+
+    border:
+        1px solid #e7dfd3;
+}
+
+.langar-form-wrap form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 17px;
+}
+
+.langar-form-wrap h3 {
+    margin: 0 0 5px;
+
+    font-size: 23px;
+}
+
+
+/* =========================================================
+   LABELS
+========================================================= */
+
+.langar-form-wrap label {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    color: #3b3731;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.langar-form-wrap label > span {
+    color: #999087;
+
+    font-size: 12px;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+.langar-form-wrap input,
+.langar-form-wrap select,
+.langar-form-wrap textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 12px 13px;
+
+    border:
+        1px solid #d9d2c8;
+
+    border-radius: 10px;
+
+    background: #fff;
+
+    color: #302c27;
+
+    font: inherit;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.langar-form-wrap input {
+    height: 48px;
+}
+
+.langar-form-wrap textarea {
+    resize: vertical;
+
+    min-height: 85px;
+}
+
+.langar-form-wrap input:focus,
+.langar-form-wrap select:focus,
+.langar-form-wrap textarea:focus {
+    border-color: #b88935;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(
+            184,
+            137,
+            53,
+            0.12
+        );
+}
+
+
+/* =========================================================
+   FORM ROW
+========================================================= */
+
+.form-row {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 15px;
+}
+
+
+/* =========================================================
+   DATE AVAILABILITY
+========================================================= */
+
+.selected-date-availability {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 13px 15px;
+
+    background: #f8f4eb;
+
+    border:
+        1px solid #e7dccb;
+
+    border-radius: 11px;
+}
+
+.selected-date-availability svg {
+    color: #b88935;
+
+    flex-shrink: 0;
+}
+
+.selected-date-availability div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.selected-date-availability strong {
+    font-size: 14px;
+}
+
+.selected-date-availability span {
+    color: #58735c;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   CHECKBOX
+========================================================= */
+
+.langar-form-wrap label.check {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    font-weight: 400;
+
+    line-height: 1.5;
+}
+
+.langar-form-wrap label.check input {
+    width: 18px;
+    height: 18px;
+
+    margin-top: 2px;
+
+    flex-shrink: 0;
+
+    accent-color: #a87824;
+}
+
+
+/* =========================================================
+   FORM ERROR
+========================================================= */
+
+.form-error {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+    margin: 0;
+
+    padding: 12px 14px;
+
+    background: #fff1f1;
+
+    border:
+        1px solid #e4b6b6;
+
+    border-radius: 10px;
+
+    color: #9d2828;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.btn-primary,
+.btn-secondary {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 48px;
+
+    padding: 11px 20px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    border: 0;
+
+    background: #a87824;
+
+    color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background: #8f681f;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 7px 18px
+        rgba(
+            143,
+            104,
+            31,
+            0.2
+        );
+}
+
+.btn-primary:disabled {
+    opacity: 0.55;
+
+    cursor: not-allowed;
+}
+
+.btn-secondary {
+    border:
+        1px solid #c9bda9;
+
+    background: white;
+
+    color: #665a4c;
+}
+
+.btn-secondary:hover {
+    border-color: #a87824;
+
+    color: #a87824;
+}
+
+
+/* =========================================================
+   FORM HELP
+========================================================= */
+
+.form-help {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    color: #888078;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   CONFIRMATION
+========================================================= */
+
+.booking-confirmation-card {
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    padding: 45px;
+
+    text-align: center;
+
+    background: white;
+
+    border-radius: 24px;
+
+    border:
+        1px solid
+        rgba(
+            184,
+            137,
+            53,
+            0.2
+        );
+
+    box-shadow:
+        0 18px 55px
+        rgba(
+            0,
+            0,
+            0,
+            0.08
+        );
+}
+
+.booking-success-icon {
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f7ecd8;
+
+    color: #a87824;
+}
+
+.booking-reference {
+    margin: 10px 0;
+
+    padding: 14px 18px;
+
+    background: #f7f3ea;
+
+    border:
+        1px dashed #b88935;
+
+    border-radius: 10px;
+
+    color: #8f681f;
+
+    font-size: 24px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.booking-reference-help {
+    color: #777067;
+
+    font-size: 13px;
+}
+
+.booking-details-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 14px;
+
+    margin: 30px 0;
+
+    text-align: left;
+}
+
+.booking-details-grid div {
+    padding: 15px;
+
+    background: #faf8f2;
+
+    border-radius: 11px;
+}
+
+.booking-details-grid span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #938a80;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+}
+
+.booking-details-grid strong {
+    font-size: 14px;
+}
+
+.status-confirmed {
+    color: #397543;
+}
+
+.status-waitlist {
+    color: #a36b20;
+}
+
+.booking-location {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    padding: 16px;
+
+    text-align: left;
+
+    background: #f8f4eb;
+
+    border-radius: 12px;
+}
+
+.booking-location svg {
+    flex-shrink: 0;
+
+    color: #b88935;
+}
+
+.booking-location div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.booking-location span {
+    color: #777067;
+
+    font-size: 13px;
+}
+
+.booking-actions {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .registration-layout {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .welcome-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .langar-hero {
+        min-height: 420px;
+
+        padding: 60px 18px;
+    }
+
+    .langar-hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .langar-hero p {
+        font-size: 15px;
+    }
+
+    .capacity-card {
+        align-items: flex-start;
+
+        padding: 22px;
+
+        flex-direction: column;
+    }
+
+    .capacity-card > svg {
+        display: none;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .langar-form-wrap {
+        padding: 22px 18px;
+    }
+
+    .booking-confirmation-card {
+        padding: 28px 18px;
+    }
+
+    .booking-details-grid {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+    .booking-reference {
+        font-size: 19px;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .booking-details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-actions {
+        flex-direction: column;
+    }
+
+    .booking-actions .btn-primary,
+    .booking-actions .btn-secondary {
+        width: 100%;
+    }
+
+    .langar-login-notice {
+        align-items: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+}

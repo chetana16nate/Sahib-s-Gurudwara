@@ -1,0 +1,1200 @@
+/* =========================================================
+   ABOUT PAGE
+========================================================= */
+
+.about-page {
+    --about-navy: #17212b;
+    --about-navy-light: #243442;
+    --about-gold: #c99a3d;
+    --about-gold-light: #e4c477;
+    --about-cream: #faf7f0;
+    --about-cream-dark: #f2ede3;
+    --about-white: #ffffff;
+    --about-text: #4f555a;
+    --about-text-light: #73787c;
+    --about-border: rgba(201, 154, 61, 0.22);
+
+    color: var(--about-text);
+    background: var(--about-cream);
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   COMMON
+========================================================= */
+
+.about-page * {
+    box-sizing: border-box;
+}
+
+.about-page a {
+    text-decoration: none;
+}
+
+.about-page p {
+    margin-top: 0;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.premium-container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
+
+.about-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 16px;
+
+    color: var(--about-gold);
+
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.about-eyebrow::before {
+    content: "";
+    width: 28px;
+    height: 1px;
+    background: var(--about-gold);
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.about-intro {
+    position: relative;
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(201, 154, 61, 0.08),
+            transparent 28%
+        ),
+        var(--about-cream);
+}
+
+.about-intro-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+    align-items: center;
+    gap: 80px;
+}
+
+.about-intro-content {
+    max-width: 680px;
+}
+
+.about-intro-content h2 {
+    margin: 0 0 24px;
+
+    color: var(--about-navy);
+
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.035em;
+}
+
+.about-intro-content h2 span,
+.about-section-heading h2 span,
+.about-history-content h2 span {
+    color: var(--about-gold);
+}
+
+.about-intro-content p {
+    max-width: 650px;
+    margin-bottom: 16px;
+
+    color: var(--about-text);
+    font-size: 1.03rem;
+    line-height: 1.85;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+========================================================= */
+
+.about-primary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin-top: 18px;
+    padding: 13px 22px;
+
+    border: 1px solid var(--about-gold);
+    border-radius: 7px;
+
+    color: #fff;
+    background: var(--about-navy);
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.about-primary-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.about-primary-btn:hover {
+    color: #fff;
+    background: var(--about-gold);
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 25px rgba(23, 33, 43, 0.16);
+}
+
+.about-primary-btn:hover svg {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   SPIRITUAL CARD
+========================================================= */
+
+.about-spiritual-card {
+    position: relative;
+
+    min-height: 390px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px 40px;
+
+    border: 1px solid var(--about-border);
+    border-radius: 18px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.98),
+            rgba(247, 241, 228, 0.95)
+        );
+
+    box-shadow:
+        0 25px 70px rgba(23, 33, 43, 0.08);
+}
+
+.about-spiritual-card::before,
+.about-spiritual-card::after {
+    content: "";
+    position: absolute;
+
+    width: 65px;
+    height: 65px;
+
+    border-color: var(--about-gold);
+    opacity: 0.45;
+}
+
+.about-spiritual-card::before {
+    top: 20px;
+    left: 20px;
+
+    border-top: 1px solid;
+    border-left: 1px solid;
+}
+
+.about-spiritual-card::after {
+    right: 20px;
+    bottom: 20px;
+
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.about-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 92px;
+    height: 92px;
+
+    margin-bottom: 30px;
+
+    border: 1px solid rgba(201, 154, 61, 0.35);
+    border-radius: 50%;
+
+    color: var(--about-gold);
+
+    font-family: Georgia, serif;
+    font-size: 3.3rem;
+
+    background: rgba(201, 154, 61, 0.07);
+
+    box-shadow:
+        0 0 0 10px rgba(201, 154, 61, 0.04);
+}
+
+.about-spiritual-card blockquote {
+    max-width: 380px;
+
+    margin: 0 0 18px;
+
+    color: var(--about-navy);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.about-spiritual-card > span {
+    color: var(--about-text-light);
+
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   VISION
+========================================================= */
+
+.about-vision {
+    background: var(--about-white);
+}
+
+.about-section-heading {
+    max-width: 720px;
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.about-section-heading .about-eyebrow {
+    justify-content: center;
+}
+
+.about-section-heading h2 {
+    margin: 0 0 18px;
+
+    color: var(--about-navy);
+
+    font-size: clamp(2rem, 3.6vw, 3rem);
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+}
+
+.about-section-heading p {
+    margin: 0 auto;
+
+    color: var(--about-text-light);
+
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   VALUES GRID
+========================================================= */
+
+.about-values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.about-value-card {
+    position: relative;
+
+    padding: 32px 26px;
+
+    border: 1px solid #e9e4da;
+    border-radius: 12px;
+
+    background: #fff;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.about-value-card::after {
+    content: "";
+
+    position: absolute;
+
+    left: 26px;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+
+    background: var(--about-gold);
+
+    transition: width 0.3s ease;
+}
+
+.about-value-card:hover {
+    border-color: rgba(201, 154, 61, 0.35);
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 18px 40px rgba(23, 33, 43, 0.08);
+}
+
+.about-value-card:hover::after {
+    width: 55px;
+}
+
+.about-value-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 56px;
+    height: 56px;
+
+    margin-bottom: 23px;
+
+    border-radius: 50%;
+
+    color: var(--about-gold);
+
+    background: rgba(201, 154, 61, 0.09);
+}
+
+.about-value-card h3 {
+    margin: 0 0 12px;
+
+    color: var(--about-navy);
+
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.about-value-card p {
+    margin: 0;
+
+    color: var(--about-text-light);
+
+    font-size: 0.92rem;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   HISTORY
+========================================================= */
+
+.about-history {
+    position: relative;
+
+    background: var(--about-cream-dark);
+}
+
+.about-history-grid {
+    display: grid;
+    grid-template-columns: 0.65fr 1.35fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.about-history-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 340px;
+
+    border: 1px solid rgba(201, 154, 61, 0.28);
+    border-radius: 18px;
+
+    color: rgba(201, 154, 61, 0.75);
+
+    font-family: Georgia, serif;
+    font-size: clamp(7rem, 15vw, 12rem);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(201, 154, 61, 0.08),
+            transparent 65%
+        );
+}
+
+.about-history-content {
+    max-width: 700px;
+}
+
+.about-history-content h2 {
+    margin: 0 0 25px;
+
+    color: var(--about-navy);
+
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    line-height: 1.2;
+}
+
+.about-history-content p {
+    margin-bottom: 18px;
+
+    color: var(--about-text);
+
+    font-size: 1rem;
+    line-height: 1.85;
+}
+
+.about-history-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   SIKH PRINCIPLES
+========================================================= */
+
+.about-principles {
+    background: var(--about-white);
+}
+
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.principle-card {
+    position: relative;
+
+    min-height: 250px;
+
+    padding: 35px;
+
+    border-radius: 14px;
+
+    background: var(--about-navy);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.principle-card::before {
+    content: "ੴ";
+
+    position: absolute;
+
+    right: -15px;
+    bottom: -38px;
+
+    color: rgba(255, 255, 255, 0.035);
+
+    font-family: Georgia, serif;
+    font-size: 9rem;
+    line-height: 1;
+}
+
+.principle-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 20px 45px rgba(23, 33, 43, 0.2);
+}
+
+.principle-number {
+    display: inline-block;
+
+    margin-bottom: 28px;
+
+    color: var(--about-gold-light);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+
+.principle-card h3 {
+    position: relative;
+    z-index: 1;
+
+    margin: 0 0 14px;
+
+    color: #fff;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
+}
+
+.principle-card p {
+    position: relative;
+    z-index: 1;
+
+    max-width: 340px;
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 0.92rem;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   LANGAR & SEVA
+========================================================= */
+
+.about-service {
+    background:
+        linear-gradient(
+            135deg,
+            #f5efe3 0%,
+            #fbf8f1 50%,
+            #f3ecdf 100%
+        );
+}
+
+.about-service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.about-service-card {
+    position: relative;
+
+    padding: 50px;
+
+    border: 1px solid rgba(201, 154, 61, 0.25);
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.75);
+
+    backdrop-filter: blur(8px);
+
+    box-shadow:
+        0 15px 45px rgba(23, 33, 43, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.about-service-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 20px 50px rgba(23, 33, 43, 0.09);
+}
+
+.about-service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 62px;
+    height: 62px;
+
+    margin-bottom: 25px;
+
+    border-radius: 50%;
+
+    color: var(--about-gold);
+
+    background: rgba(201, 154, 61, 0.1);
+}
+
+.about-service-card h2 {
+    margin: 0 0 18px;
+
+    color: var(--about-navy);
+
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    line-height: 1.25;
+}
+
+.about-service-card p {
+    max-width: 570px;
+
+    margin-bottom: 24px;
+
+    color: var(--about-text);
+
+    font-size: 0.97rem;
+    line-height: 1.8;
+}
+
+.about-light-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    color: var(--about-navy);
+
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    transition:
+        color 0.3s ease,
+        gap 0.3s ease;
+}
+
+.about-light-link:hover {
+    color: var(--about-gold);
+    gap: 13px;
+}
+
+
+/* =========================================================
+   COMMUNITY CTA
+========================================================= */
+
+.about-community {
+    position: relative;
+
+    color: #fff;
+
+    background:
+        linear-gradient(
+            rgba(18, 29, 38, 0.96),
+            rgba(18, 29, 38, 0.98)
+        );
+}
+
+.about-community::before {
+    content: "ੴ";
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    color: rgba(201, 154, 61, 0.045);
+
+    font-family: Georgia, serif;
+    font-size: min(55vw, 500px);
+
+    line-height: 1;
+
+    pointer-events: none;
+}
+
+.about-community-content {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 800px;
+
+    text-align: center;
+}
+
+.about-community-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 75px;
+    height: 75px;
+
+    margin-bottom: 25px;
+
+    border: 1px solid rgba(201, 154, 61, 0.5);
+    border-radius: 50%;
+
+    color: var(--about-gold-light);
+
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+
+    background: rgba(201, 154, 61, 0.07);
+}
+
+.about-community-content .about-eyebrow {
+    color: var(--about-gold-light);
+}
+
+.about-community-content h2 {
+    margin: 0 0 18px;
+
+    color: #fff;
+
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    line-height: 1.15;
+}
+
+.about-community-content p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.about-community-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-top: 30px;
+}
+
+.about-outline-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 12px 21px;
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 7px;
+
+    color: #fff;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.about-outline-btn:hover {
+    color: var(--about-navy);
+
+    border-color: #fff;
+
+    background: #fff;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .section-padding {
+        padding: 80px 0;
+    }
+
+    .about-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .about-intro-content {
+        max-width: 750px;
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .about-intro-content .about-eyebrow {
+        justify-content: center;
+    }
+
+    .about-intro-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-spiritual-card {
+        max-width: 650px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-history-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .about-history-symbol {
+        min-height: 260px;
+        max-width: 500px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .about-history-content {
+        max-width: 750px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .principles-grid {
+        grid-template-columns: 1fr;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .principle-card {
+        min-height: auto;
+    }
+
+    .about-service-grid {
+        grid-template-columns: 1fr;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .premium-container {
+        width: min(100% - 28px, 1180px);
+    }
+
+    .section-padding {
+        padding: 65px 0;
+    }
+
+    .about-eyebrow {
+        margin-bottom: 13px;
+
+        font-size: 0.68rem;
+        letter-spacing: 0.12em;
+    }
+
+    .about-eyebrow::before {
+        width: 20px;
+    }
+
+
+    /* INTRO */
+
+    .about-intro-content h2 {
+        margin-bottom: 18px;
+
+        font-size: 2rem;
+        line-height: 1.18;
+    }
+
+    .about-intro-content p {
+        font-size: 0.94rem;
+        line-height: 1.75;
+    }
+
+    .about-primary-btn {
+        width: 100%;
+        max-width: 260px;
+        padding: 13px 18px;
+    }
+
+    .about-spiritual-card {
+        min-height: 330px;
+
+        padding: 38px 22px;
+
+        border-radius: 14px;
+    }
+
+    .about-spiritual-card::before,
+    .about-spiritual-card::after {
+        width: 45px;
+        height: 45px;
+    }
+
+    .about-spiritual-card::before {
+        top: 14px;
+        left: 14px;
+    }
+
+    .about-spiritual-card::after {
+        right: 14px;
+        bottom: 14px;
+    }
+
+    .about-symbol {
+        width: 75px;
+        height: 75px;
+
+        margin-bottom: 23px;
+
+        font-size: 2.6rem;
+    }
+
+    .about-spiritual-card blockquote {
+        font-size: 1.2rem;
+        line-height: 1.55;
+    }
+
+
+    /* SECTION HEADINGS */
+
+    .about-section-heading {
+        margin-bottom: 38px;
+    }
+
+    .about-section-heading h2 {
+        font-size: 1.9rem;
+    }
+
+    .about-section-heading p {
+        font-size: 0.92rem;
+        line-height: 1.7;
+    }
+
+
+    /* VALUES */
+
+    .about-values-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .about-value-card {
+        padding: 27px 23px;
+    }
+
+    .about-value-card:hover {
+        transform: none;
+    }
+
+
+    /* HISTORY */
+
+    .about-history-grid {
+        gap: 35px;
+    }
+
+    .about-history-symbol {
+        min-height: 220px;
+
+        border-radius: 14px;
+
+        font-size: 7rem;
+    }
+
+    .about-history-content h2 {
+        font-size: 1.9rem;
+    }
+
+    .about-history-content p {
+        font-size: 0.94rem;
+        line-height: 1.75;
+    }
+
+
+    /* PRINCIPLES */
+
+    .principles-grid {
+        gap: 15px;
+    }
+
+    .principle-card {
+        padding: 28px 24px;
+
+        border-radius: 12px;
+    }
+
+    .principle-number {
+        margin-bottom: 22px;
+    }
+
+    .principle-card h3 {
+        font-size: 1.35rem;
+    }
+
+    .principle-card p {
+        font-size: 0.9rem;
+    }
+
+
+    /* LANGAR / SEVA */
+
+    .about-service-grid {
+        gap: 15px;
+    }
+
+    .about-service-card {
+        padding: 32px 24px;
+
+        border-radius: 13px;
+    }
+
+    .about-service-card:hover {
+        transform: none;
+    }
+
+    .about-service-icon {
+        width: 55px;
+        height: 55px;
+
+        margin-bottom: 20px;
+    }
+
+    .about-service-card h2 {
+        font-size: 1.55rem;
+    }
+
+    .about-service-card p {
+        font-size: 0.92rem;
+        line-height: 1.75;
+    }
+
+
+    /* COMMUNITY */
+
+    .about-community {
+        padding: 75px 0;
+    }
+
+    .about-community-symbol {
+        width: 65px;
+        height: 65px;
+
+        margin-bottom: 20px;
+
+        font-size: 2.2rem;
+    }
+
+    .about-community-content h2 {
+        font-size: 2.1rem;
+    }
+
+    .about-community-content p {
+        font-size: 0.94rem;
+        line-height: 1.75;
+    }
+
+    .about-community-actions {
+        width: 100%;
+
+        flex-direction: column;
+    }
+
+    .about-community-actions .about-primary-btn,
+    .about-community-actions .about-outline-btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .premium-container {
+        width: calc(100% - 24px);
+    }
+
+    .section-padding {
+        padding: 55px 0;
+    }
+
+    .about-intro-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-section-heading h2 {
+        font-size: 1.75rem;
+    }
+
+    .about-spiritual-card {
+        padding: 32px 18px;
+    }
+
+    .about-service-card {
+        padding: 28px 20px;
+    }
+
+    .principle-card {
+        padding: 25px 20px;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .about-page *,
+    .about-page *::before,
+    .about-page *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+========================================================= */
+
+@media (hover: none) {
+
+    .about-value-card:hover,
+    .about-service-card:hover,
+    .principle-card:hover {
+        transform: none;
+    }
+
+    .about-primary-btn:hover {
+        transform: none;
+    }
+
+    .about-outline-btn:hover {
+        transform: none;
+    }
+}

@@ -1,0 +1,586 @@
+﻿/* =========================================================
+   NAVBAR
+========================================================= */
+
+.devotional-strip {
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  padding: 5px 20px;
+  background: #102a43;
+  color: #fff6df;
+  font-family: "Noto Sans Gurmukhi", "DM Sans", sans-serif;
+  font-size: 11px;
+  letter-spacing: .25px;
+}
+
+.strip-note {
+  color: #e9c77c;
+  font-family: "DM Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.navbar {
+  width: 100%;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, .97);
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid #eee8df;
+
+  box-shadow:
+    0 3px 15px rgba(45, 35, 25, 0.06);
+
+  font-family: "DM Sans", sans-serif;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.premium-container {
+  width: min(1180px, calc(100% - 40px));
+
+  margin: 0 auto;
+}
+
+.navbar-container {
+  min-height: 76px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 25px;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.navbar-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  text-decoration: none;
+
+  color: #302924;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   LOGO SYMBOL
+========================================================= */
+
+.logo-symbol {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff3dc,
+      #f7dfb4
+    );
+
+  border: 1px solid #e6c98e;
+
+  color: #bd7617;
+
+  font-family: "Noto Serif Gurmukhi", "Noto Sans Gurmukhi", serif;
+
+  font-size: 27px;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   LOGO TEXT
+========================================================= */
+
+.logo-text {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.logo-text h2 {
+  margin: 0;
+
+  color: #332c28;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size: 18px;
+
+  line-height: 1.1;
+
+  font-weight: 700;
+}
+
+.logo-text span {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  color: #81766d;
+
+  font-size: 10px;
+
+  font-weight: 500;
+}
+
+.logo-text span svg {
+  color: #ce7a12;
+
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.nav-links {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 3px;
+
+  margin: 0;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+
+/* =========================================================
+   NAV LINK
+========================================================= */
+
+.nav-link {
+  position: relative;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  min-height: 42px;
+
+  padding: 0 10px;
+
+  color: #4c443e;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  transition:
+    color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ce7911;
+}
+
+
+/* =========================================================
+   ACTIVE LINK
+========================================================= */
+
+.nav-link.active-link {
+  color: #c97610;
+}
+
+.nav-link.active-link::after {
+  content: "";
+
+  position: absolute;
+
+  left: 10px;
+  right: 10px;
+
+  bottom: 3px;
+
+  height: 2px;
+
+  border-radius: 5px;
+
+  background: #d88218;
+}
+
+
+/* =========================================================
+   DONATE
+========================================================= */
+
+.nav-donate-wrapper {
+  margin-left: 8px;
+}
+
+.donate-btn {
+  min-height: 39px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 0 17px;
+
+  border-radius: 6px;
+
+  background: #d98418;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 5px 15px rgba(206, 123, 19, 0.22);
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.donate-btn:hover {
+  background: #bd6f0c;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 8px 20px rgba(206, 123, 19, 0.28);
+}
+
+.donate-btn svg {
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   MOBILE TOGGLE
+========================================================= */
+
+.mobile-toggle {
+  display: none;
+
+  width: 43px;
+  height: 43px;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #eadfd4;
+
+  border-radius: 7px;
+
+  background: #fffaf4;
+
+  color: #c77711;
+
+  cursor: pointer;
+
+  font-size: 19px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .premium-container {
+    width: min(
+      100% - 30px,
+      1000px
+    );
+  }
+
+  .navbar-container {
+    gap: 15px;
+  }
+
+  .nav-link {
+    padding: 0 7px;
+
+    font-size: 11px;
+  }
+
+  .nav-link.active-link::after {
+    left: 7px;
+    right: 7px;
+  }
+
+  .donate-btn {
+    padding: 0 13px;
+
+    font-size: 11px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .navbar-container {
+    min-height: 68px;
+  }
+
+
+  /* LOGO */
+
+  .logo-symbol {
+    width: 43px;
+    height: 43px;
+
+    font-size: 24px;
+  }
+
+  .logo-text h2 {
+    font-size: 16px;
+  }
+
+  .logo-text span {
+    font-size: 9px;
+  }
+
+
+  /* MOBILE BUTTON */
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+
+  /* =======================================================
+     MOBILE MENU
+  ======================================================== */
+
+  .nav-links {
+    position: absolute;
+
+    top: 68px;
+
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    justify-content: flex-start;
+
+    gap: 0;
+
+    padding: 10px 15px 18px;
+
+    background: #ffffff;
+
+    border-top: 1px solid #eee8df;
+
+    box-shadow:
+      0 15px 30px rgba(45, 35, 25, 0.10);
+
+    transform:
+      translateY(-15px);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease,
+      visibility 0.25s ease;
+  }
+
+
+  /* OPEN */
+
+  .nav-links.active {
+    transform: translateY(0);
+
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+  }
+
+
+  /* MOBILE LINK */
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 100%;
+
+    min-height: 47px;
+
+    padding: 0 12px;
+
+    border-bottom: 1px solid #f1ece7;
+
+    font-size: 13px;
+  }
+
+  .nav-link.active-link::after {
+    display: none;
+  }
+
+  .nav-link.active-link {
+    background: #fff8ee;
+
+    border-radius: 5px;
+
+    color: #c97610;
+  }
+
+
+  /* DONATE */
+
+  .nav-donate-wrapper {
+    margin: 12px 0 0;
+  }
+
+  .donate-btn {
+    width: 100%;
+
+    min-height: 45px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+  .devotional-strip {
+    min-height: 29px;
+    padding-inline: 12px;
+    font-size: 9px;
+  }
+
+  .strip-note {
+    display: none;
+  }
+
+  .premium-container {
+    width: calc(100% - 24px);
+  }
+
+  .logo-symbol {
+    width: 40px;
+    height: 40px;
+
+    font-size: 22px;
+  }
+
+  .logo-text h2 {
+    font-size: 14px;
+  }
+
+  .logo-text span {
+    font-size: 8px;
+  }
+
+}
+
+/* Comfortable navigation sizing */
+.devotional-strip {
+  min-height: 38px;
+  font-size: 13px;
+}
+
+.premium-container {
+  width: min(1320px, calc(100% - 48px));
+  max-width: none;
+  padding: 0;
+}
+
+.navbar-container { min-height: 88px; }
+.logo-symbol { width: 56px; height: 56px; font-size: 31px; }
+.logo-text h2 { font-size: 22px; }
+.logo-text span { font-size: 13px; }
+.nav-links { gap: 5px; }
+.nav-link { min-height: 48px; padding-inline: 12px; font-size: 14px; }
+.donate-btn { min-height: 46px; padding-inline: 20px; font-size: 14px; }
+
+@media (max-width: 1050px) {
+  .logo-text h2 { font-size: 19px; }
+  .nav-link { padding-inline: 8px; font-size: 13px; }
+}
+
+@media (max-width: 850px) {
+  .premium-container { width: calc(100% - 32px); }
+  .navbar-container { min-height: 76px; }
+  .nav-links { top: 76px; }
+  .nav-link { min-height: 52px; font-size: 16px; }
+  .logo-text h2 { font-size: 18px; }
+  .logo-text span { font-size: 11px; }
+}
+

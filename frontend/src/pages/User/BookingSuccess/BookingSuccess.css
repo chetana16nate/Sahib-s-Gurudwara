@@ -1,0 +1,1307 @@
+/* =========================================================
+   BOOKING SUCCESS PAGE
+========================================================= */
+
+.booking-success-page {
+    min-height: 100vh;
+
+    background: #f7f3eb;
+
+    color: #392719;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.booking-success-header {
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    border-bottom: 1px solid #e6ddd1;
+
+    box-shadow:
+        0 3px 15px rgba(50, 35, 20, 0.06);
+}
+
+
+.booking-success-header-inner {
+    width: min(1180px, calc(100% - 40px));
+
+    min-height: 72px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   BACK
+========================================================= */
+
+.success-back-button {
+    border: none;
+
+    background: transparent;
+
+    color: #665a50;
+
+    padding: 9px 10px;
+
+    border-radius: 7px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.success-back-button:hover {
+    background: #f7f0e5;
+
+    color: #95601e;
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.success-brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.success-brand-symbol {
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: #f5ead8;
+
+    border: 1px solid #dec49b;
+
+    color: #9a641f;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 23px;
+}
+
+
+.success-brand div:last-child {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.success-brand strong {
+    font-size: 14px;
+}
+
+
+.success-brand span {
+    color: #9a641f;
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   USER
+========================================================= */
+
+.success-user {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #55493f;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.success-user-avatar {
+    width: 35px;
+
+    height: 35px;
+
+    border-radius: 50%;
+
+    background: #9a641f;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.booking-success-main {
+    padding: 45px 20px 65px;
+}
+
+
+.booking-success-container {
+    width: min(760px, 100%);
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   SUCCESS HERO
+========================================================= */
+
+.success-hero {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+.success-check-circle {
+    width: 78px;
+
+    height: 78px;
+
+    margin: 0 auto 17px;
+
+    border-radius: 50%;
+
+    background: #eaf6ed;
+
+    border: 1px solid #bfdfc7;
+
+    color: #3c8251;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.success-eyebrow {
+    margin: 0 0 6px;
+
+    color: #a16c26;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+}
+
+
+.success-hero h1 {
+    margin: 0 0 7px;
+
+    color: #392719;
+
+    font-size: 30px;
+
+    line-height: 1.2;
+}
+
+
+.success-hero > p:last-child {
+    margin: 0;
+
+    color: #786d63;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   RECEIPT
+========================================================= */
+
+.langar-receipt {
+    position: relative;
+
+    background: #ffffff;
+
+    border: 1px solid #ded4c8;
+
+    border-radius: 16px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 10px 35px rgba(50, 35, 20, 0.08);
+
+    overflow: hidden;
+}
+
+
+/* Decorative top line */
+
+.langar-receipt::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    height: 4px;
+
+    background: #9a641f;
+}
+
+
+/* =========================================================
+   RECEIPT HEADER
+========================================================= */
+
+.receipt-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.receipt-gurdwara {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.receipt-symbol {
+    width: 47px;
+
+    height: 47px;
+
+    border-radius: 50%;
+
+    background: #f4e8d4;
+
+    border: 1px solid #dec49c;
+
+    color: #9a641f;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+
+.receipt-gurdwara h2 {
+    margin: 0 0 3px;
+
+    font-size: 17px;
+
+    color: #392719;
+}
+
+
+.receipt-gurdwara p {
+    margin: 0;
+
+    color: #877b70;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.receipt-status {
+    padding: 7px 11px;
+
+    border-radius: 20px;
+
+    background: #edf8f0;
+
+    border: 1px solid #cce5d1;
+
+    color: #347449;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   LINE
+========================================================= */
+
+.receipt-line {
+    height: 1px;
+
+    background: #ebe3d9;
+
+    margin: 24px 0;
+}
+
+
+/* =========================================================
+   BOOKING NUMBER
+========================================================= */
+
+.booking-number-section {
+    text-align: center;
+}
+
+
+.booking-number-section > span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #9a641f;
+
+    font-size: 9px;
+
+    letter-spacing: 1.3px;
+
+    font-weight: 700;
+}
+
+
+.booking-number-row {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+}
+
+
+.booking-number-row strong {
+    color: #392719;
+
+    font-size: 25px;
+
+    letter-spacing: 1px;
+}
+
+
+.copy-booking-button {
+    width: 34px;
+
+    height: 34px;
+
+    border: 1px solid #ded3c6;
+
+    border-radius: 7px;
+
+    background: #faf7f2;
+
+    color: #8d5c20;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+
+.copy-booking-button:hover {
+    background: #f3e7d6;
+}
+
+
+.booking-number-section small {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #4c865c;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   DETAILS
+========================================================= */
+
+.receipt-details {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 22px 30px;
+}
+
+
+.receipt-detail {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+}
+
+
+.receipt-detail-icon {
+    width: 36px;
+
+    height: 36px;
+
+    flex-shrink: 0;
+
+    border-radius: 8px;
+
+    background: #faf3e7;
+
+    color: #9a641f;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.receipt-detail span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #8b7e73;
+
+    font-size: 10px;
+}
+
+
+.receipt-detail strong {
+    display: block;
+
+    color: #443328;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+}
+
+
+.receipt-detail strong.confirmed-text {
+    color: #347449;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   LOCATION
+========================================================= */
+
+.receipt-location {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    padding: 14px;
+
+    border-radius: 9px;
+
+    background: #faf6ee;
+
+    color: #9a641f;
+}
+
+
+.receipt-location div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.receipt-location strong {
+    color: #49392d;
+
+    font-size: 12px;
+}
+
+
+.receipt-location span {
+    color: #81756a;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   ARRIVAL
+========================================================= */
+
+.receipt-arrival {
+    margin-top: 12px;
+
+    padding: 11px 13px;
+
+    border-radius: 8px;
+
+    background: #f9f4ec;
+
+    color: #806f5b;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 7px;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   RECEIPT FOOTER
+========================================================= */
+
+.receipt-footer {
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px dashed #ddd1c2;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    text-align: left;
+}
+
+
+.receipt-footer-symbol {
+    color: #9a641f;
+
+    font-size: 24px;
+}
+
+
+.receipt-footer div:last-child {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.receipt-footer strong {
+    color: #9a641f;
+
+    font-size: 12px;
+}
+
+
+.receipt-footer span {
+    color: #8a7e73;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   SHARE MESSAGE
+========================================================= */
+
+.share-message {
+    margin-top: 14px;
+
+    padding: 11px 14px;
+
+    border-radius: 8px;
+
+    background: #edf8f0;
+
+    border: 1px solid #cce5d1;
+
+    color: #347449;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.success-actions {
+    margin-top: 22px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.4fr
+        1fr
+        1fr;
+
+    gap: 10px;
+}
+
+
+.success-actions button {
+    min-height: 48px;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 10px 12px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.success-primary-action {
+    border: none;
+
+    background: #9a641f;
+
+    color: #ffffff;
+}
+
+
+.success-primary-action:hover {
+    background: #7e5018;
+
+    transform: translateY(-1px);
+}
+
+
+.success-secondary-action {
+    border: 1px solid #d8cec2;
+
+    background: #ffffff;
+
+    color: #66584c;
+}
+
+
+.success-secondary-action:hover {
+    background: #f9f4ed;
+
+    border-color: #c7b9a9;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.success-navigation {
+    margin-top: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+
+.success-navigation button {
+    border: none;
+
+    background: transparent;
+
+    color: #8d5c20;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.success-navigation button:hover {
+    color: #634012;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   IMPORTANT NOTE
+========================================================= */
+
+.success-important-note {
+    margin-top: 24px;
+
+    padding: 16px;
+
+    border: 1px solid #e4d8c9;
+
+    border-radius: 10px;
+
+    background: #fffdf9;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 11px;
+
+    color: #8f6127;
+}
+
+
+.success-important-note > svg {
+    flex-shrink: 0;
+
+    margin-top: 1px;
+}
+
+
+.success-important-note strong {
+    display: block;
+
+    color: #4d3b2e;
+
+    font-size: 11px;
+
+    margin-bottom: 4px;
+}
+
+
+.success-important-note p {
+    margin: 0;
+
+    color: #81756a;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.booking-success-footer {
+    padding: 25px 20px;
+
+    border-top: 1px solid #e4dbcf;
+
+    background: #ffffff;
+
+    text-align: center;
+
+    color: #85796e;
+
+    font-size: 11px;
+}
+
+
+.booking-success-footer p {
+    margin: 0 0 4px;
+}
+
+
+.booking-success-footer span {
+    color: #9a641f;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   BOOKING NOT FOUND
+========================================================= */
+
+.booking-not-found {
+    width: min(480px, calc(100% - 30px));
+
+    margin: 100px auto;
+
+    padding: 35px 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3d8cb;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 30px rgba(50, 35, 20, 0.06);
+
+    text-align: center;
+}
+
+
+.booking-not-found-icon {
+    width: 65px;
+
+    height: 65px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+
+    background: #f8eee1;
+
+    color: #9a641f;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.booking-not-found h1 {
+    margin: 0 0 8px;
+
+    font-size: 23px;
+
+    color: #392719;
+}
+
+
+.booking-not-found p {
+    margin: 0;
+
+    color: #7d7167;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+
+.booking-not-found-actions {
+    margin-top: 22px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+.primary-success-button,
+.secondary-success-button {
+    min-height: 43px;
+
+    padding: 0 15px;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+.primary-success-button {
+    border: none;
+
+    background: #9a641f;
+
+    color: white;
+}
+
+
+.secondary-success-button {
+    border: 1px solid #d8cec2;
+
+    background: white;
+
+    color: #65584c;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .booking-success-header-inner {
+        width: calc(100% - 28px);
+
+        min-height: 65px;
+    }
+
+
+    .success-brand strong {
+        font-size: 12px;
+    }
+
+
+    .success-brand span {
+        font-size: 9px;
+    }
+
+
+    .success-brand-symbol {
+        width: 37px;
+
+        height: 37px;
+
+        font-size: 20px;
+    }
+
+
+    .success-user span {
+        display: none;
+    }
+
+
+    .success-user-avatar {
+        width: 34px;
+
+        height: 34px;
+    }
+
+
+    .booking-success-main {
+        padding: 30px 14px 45px;
+    }
+
+
+    .success-check-circle {
+        width: 68px;
+
+        height: 68px;
+    }
+
+
+    .success-check-circle svg {
+        width: 40px;
+
+        height: 40px;
+    }
+
+
+    .success-hero h1 {
+        font-size: 25px;
+    }
+
+
+    .success-hero > p:last-child {
+        font-size: 11px;
+    }
+
+
+    .langar-receipt {
+        padding: 22px 17px;
+
+        border-radius: 13px;
+    }
+
+
+    .receipt-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .receipt-status {
+        align-self: flex-start;
+    }
+
+
+    .receipt-details {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .success-actions {
+        grid-template-columns: 1fr;
+    }
+
+
+    .success-actions button {
+        min-height: 47px;
+    }
+
+
+    .success-navigation {
+        flex-direction: column;
+
+        gap: 13px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .success-back-button span {
+        display: none;
+    }
+
+
+    .booking-success-header-inner {
+        gap: 8px;
+    }
+
+
+    .success-hero h1 {
+        font-size: 22px;
+    }
+
+
+    .langar-receipt {
+        padding: 20px 14px;
+    }
+
+
+    .receipt-gurdwara h2 {
+        font-size: 15px;
+    }
+
+
+    .booking-number-row strong {
+        font-size: 19px;
+
+        word-break: break-all;
+    }
+
+
+    .booking-not-found-actions {
+        flex-direction: column;
+    }
+
+
+    .primary-success-button,
+    .secondary-success-button {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   PRINT
+========================================================= */
+
+@media print {
+
+    @page {
+        size: A4;
+
+        margin: 12mm;
+    }
+
+
+    body {
+        background: white !important;
+    }
+
+
+    .booking-success-page {
+        background: white !important;
+
+        min-height: auto;
+    }
+
+
+    .booking-success-header,
+    .success-actions,
+    .success-navigation,
+    .success-important-note,
+    .booking-success-footer,
+    .share-message,
+    .success-hero {
+        display: none !important;
+    }
+
+
+    .booking-success-main {
+        padding: 0 !important;
+    }
+
+
+    .booking-success-container {
+        width: 100% !important;
+
+        max-width: 100% !important;
+    }
+
+
+    .langar-receipt {
+        box-shadow: none !important;
+
+        border: 1px solid #bbb !important;
+
+        border-radius: 0 !important;
+
+        padding: 25px !important;
+    }
+
+
+    .langar-receipt::before {
+        background: #777 !important;
+    }
+
+
+    .receipt-status {
+        background: white !important;
+
+        border: 1px solid #999 !important;
+
+        color: #333 !important;
+    }
+
+
+    .receipt-symbol,
+    .receipt-detail-icon {
+        background: white !important;
+
+        border-color: #bbb !important;
+
+        color: #555 !important;
+    }
+
+
+    .receipt-footer-symbol {
+        color: #555 !important;
+    }
+
+}

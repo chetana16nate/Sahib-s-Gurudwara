@@ -1,0 +1,17 @@
+{
+  "name": "Sahib's Gurudwara",
+  "short_name": "Gurudwara",
+  "description": "Prayer, seva, programs and community information for Sahib's Gurudwara in Accra, Ghana.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f3e8",
+  "theme_color": "#102a43",
+  "icons": [
+    {
+      "src": "/waheguru-logo.jpg",
+      "sizes": "any",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

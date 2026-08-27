@@ -1,0 +1,1943 @@
+﻿/* =========================================================
+   SAHIB'S GURUDWARA - HOME PAGE
+   Premium Responsive Design
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Noto+Sans+Gurmukhi:wght@400;500;600;700&display=swap');
+
+
+/* =========================================================
+   RESET / BASE
+========================================================= */
+
+.home-page {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+
+  background: #fffdf9;
+  color: #332c27;
+
+  font-family: "DM Sans", Arial, sans-serif;
+
+  transform: none;
+  zoom: 1;
+}
+
+.home-page *,
+.home-page *::before,
+.home-page *::after {
+  box-sizing: border-box;
+}
+
+.home-page a {
+  text-decoration: none;
+}
+
+.home-page img {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.home-page .container {
+  width: min(1240px, calc(100% - 64px));
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.home-hero {
+  position: relative;
+
+  min-height: 680px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 100px 24px 135px;
+
+  background-image: url("/golden-temple-home-hero.png");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  isolation: isolate;
+}
+
+
+/* =========================================================
+   HERO OVERLAY
+========================================================= */
+
+.hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(29, 22, 18, 0.76) 0%,
+      rgba(29, 22, 18, 0.55) 42%,
+      rgba(29, 22, 18, 0.40) 100%
+    );
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.hero-content {
+  position: relative;
+
+  z-index: 1;
+
+  width: min(1100px, 100%);
+
+  margin: 0 auto;
+
+  text-align: center;
+
+  color: #fff;
+
+  animation: heroAppear 0.8s ease both;
+}
+
+@keyframes heroAppear {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================================================
+   HERO TAG
+========================================================= */
+
+.hero-tag {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-bottom: 24px;
+
+  padding: 9px 19px;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+
+  border-radius: 50px;
+
+  background: rgba(195, 125, 30, 0.72);
+
+  color: #fff;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.2px;
+
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.hero-tag-icon {
+  color: #fff8e8;
+
+  font-family: Georgia, serif;
+
+  font-size: 40px;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   HERO MAIN TITLE
+========================================================= */
+
+.hero-content h1 {
+  margin: 0;
+
+  color: #fff;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size: clamp(42px, 5vw, 72px);
+
+  font-weight: 600;
+
+  line-height: 1.15;
+
+  letter-spacing: -1px;
+
+  text-align: center;
+
+  max-width: 980px;
+  margin-inline: auto;
+
+  text-shadow:
+    0 5px 25px rgba(0, 0, 0, 0.30);
+}
+
+
+/* =========================================================
+   HERO PUNJABI TEXT
+   Example:
+   ਵਿਸ਼ਵਾਸ, ਸੇਵਾ ਅਤੇ ਸੰਗਤ ਦਾ ਪਵਿੱਤਰ ਸਥਾਨ  ੴ
+========================================================= */
+
+.hero-punjabi {
+  margin: 16px auto 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 22px;
+
+  color: #ffe5b0;
+
+  font-family:
+    "Noto Sans Gurmukhi",
+    "Raavi",
+    "Arial Unicode MS",
+    sans-serif;
+
+  /* Increased Punjabi text size */
+  font-size: clamp(28px, 2.5vw, 38px);
+
+  font-weight: 600;
+
+  line-height: 1.7;
+
+  text-align: center;
+
+  letter-spacing: 0.3px;
+
+  text-shadow:
+    0 3px 12px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================================
+   LARGE IK ONKAR SYMBOL
+========================================================= */
+
+.hero-punjabi strong {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #efa33a;
+
+  font-family: Georgia, serif;
+
+  /* Larger ੴ */
+  font-size: clamp(58px, 5vw, 78px);
+
+  font-weight: 400;
+
+  line-height: 1;
+
+  text-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================================
+   HERO DIVIDER
+========================================================= */
+
+.hero-divider {
+  width: min(390px, 80%);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  margin: 24px auto 20px;
+}
+
+.hero-divider span {
+  height: 1px;
+
+  flex: 1;
+
+  background:
+    linear-gradient(
+      to right,
+      transparent,
+      #eab05d
+    );
+}
+
+.hero-divider span:last-child {
+  background:
+    linear-gradient(
+      to left,
+      transparent,
+      #eab05d
+    );
+}
+
+.hero-divider strong {
+  color: #efa33a;
+
+  font-family: Georgia, serif;
+
+  font-size: 25px;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
+
+.hero-content > p.hero-subtitle {
+  max-width: 820px;
+
+  margin: 0 auto;
+
+  color: rgba(255, 255, 255, 0.96);
+
+  /* Increased description size */
+  font-size: 21px;
+
+  font-weight: 400;
+
+  line-height: 1.8;
+
+  text-align: center;
+
+  letter-spacing: 0.15px;
+
+  text-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.28);
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.hero-buttons {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 14px;
+
+  margin-top: 32px;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+========================================================= */
+
+.primary-btn {
+  min-height: 50px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 0 25px;
+
+  border: 1px solid transparent;
+
+  border-radius: 6px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #e89427,
+      #c96d0d
+    );
+
+  color: #fff;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 8px 22px rgba(176, 92, 10, 0.25);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 13px 28px rgba(176, 92, 10, 0.34);
+}
+
+
+/* =========================================================
+   SECONDARY BUTTON
+========================================================= */
+
+.secondary-btn {
+  min-height: 50px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 0 24px;
+
+  border: 1px solid rgba(255, 255, 255, 0.70);
+
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.10);
+
+  backdrop-filter: blur(6px);
+
+  color: #fff;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.secondary-btn:hover {
+  transform: translateY(-3px);
+
+  background: rgba(255, 255, 255, 0.20);
+}
+
+.gurudwara-icon {
+  font-size: 18px;
+}
+
+
+/* =========================================================
+   QUICK ACTIONS
+========================================================= */
+
+.quick-actions-section {
+  position: relative;
+
+  z-index: 10;
+
+  margin-top: -55px;
+
+  padding-bottom: 52px;
+}
+
+/* TODAY'S PROGRAMME */
+.today-section {
+  padding: 42px 0 82px;
+  background: #fffdf9;
+}
+
+.today-panel {
+  display: grid;
+  grid-template-columns: .9fr 1.4fr;
+  align-items: center;
+  gap: 64px;
+  padding: 42px 48px;
+  border: 1px solid #eadcc8;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #fffaf0, #ffffff);
+  box-shadow: 0 16px 45px rgba(57, 43, 28, .07);
+}
+
+.today-intro h2 {
+  margin: 0 0 12px;
+  color: #243b53;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(28px, 3vw, 39px);
+  line-height: 1.2;
+}
+
+.today-intro p {
+  margin: 0;
+  color: #6f675f;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.schedule-item {
+  min-height: 118px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 13px;
+  padding: 20px;
+  border-left: 3px solid #d58a37;
+  background: #fff;
+  color: #c97614;
+  box-shadow: 0 7px 22px rgba(60, 44, 27, .06);
+}
+
+.schedule-item > svg { font-size: 18px; }
+.schedule-item span { display: flex; flex-direction: column; gap: 4px; }
+.schedule-item small { color: #8b8177; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+.schedule-item strong { color: #342c27; font-family: "Playfair Display", Georgia, serif; font-size: 15px; }
+
+.quick-actions {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 0;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  background: #fff;
+
+  box-shadow:
+    0 15px 40px rgba(47, 35, 23, 0.13);
+}
+
+
+/* =========================================================
+   QUICK CARD
+========================================================= */
+
+.quick-card {
+  min-height: 105px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 17px;
+
+  padding: 20px 25px;
+
+  border-right: 1px solid #eee5da;
+
+  background: #fff;
+
+  color: #302a25;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.quick-card:last-child {
+  border-right: none;
+}
+
+.quick-card:hover {
+  background: #fffaf2;
+}
+
+
+/* =========================================================
+   QUICK ICON
+========================================================= */
+
+.quick-icon {
+  width: 52px;
+  height: 52px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fff2dd;
+
+  color: #d17a12;
+
+  font-size: 19px;
+}
+
+
+/* =========================================================
+   QUICK TEXT
+========================================================= */
+
+.quick-text {
+  flex: 1;
+
+  min-width: 0;
+}
+
+.quick-text h3 {
+  margin: 0 0 5px;
+
+  color: #342c27;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size: 17px;
+
+  line-height: 1.25;
+}
+
+.quick-text p {
+  margin: 0;
+
+  color: #81776e;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   QUICK ARROW
+========================================================= */
+
+.quick-arrow {
+  flex-shrink: 0;
+
+  color: #cc7512;
+
+  font-size: 13px;
+
+  transition: transform 0.25s ease;
+}
+
+.quick-card:hover .quick-arrow {
+  transform: translateX(5px);
+}
+
+
+/* =========================================================
+   WELCOME SECTION
+========================================================= */
+
+.welcome-section {
+  padding: 90px 0 105px;
+
+  background: #fffdf9;
+}
+
+.welcome-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 85px;
+}
+
+
+/* =========================================================
+   WELCOME IMAGE
+========================================================= */
+
+.welcome-image {
+  position: relative;
+
+  min-height: 450px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border-radius: 12px;
+
+  background:
+    radial-gradient(
+      circle at center,
+      #fae8c5 0%,
+      #f0d09a 38%,
+      #dcae61 72%,
+      #bd8131 100%
+    );
+
+  box-shadow:
+    0 18px 45px rgba(74, 49, 19, 0.18);
+}
+
+
+/* =========================================================
+   WELCOME DECORATION
+========================================================= */
+
+.welcome-image::before {
+  content: "";
+
+  position: absolute;
+
+  width: 80%;
+
+  aspect-ratio: 1;
+
+  border: 1px solid rgba(111, 70, 17, 0.22);
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 0 0 25px rgba(255, 255, 255, 0.035),
+    0 0 0 50px rgba(255, 255, 255, 0.03);
+}
+
+.welcome-image::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 18px;
+
+  border: 1px solid rgba(255, 248, 227, 0.35);
+
+  border-radius: 8px;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   IK ONKAR IN WELCOME IMAGE
+========================================================= */
+
+.ik-onkar-large {
+  position: relative;
+
+  z-index: 2;
+
+  color: #fff8e8;
+
+  font-family: Georgia, serif;
+
+  font-size: clamp(180px, 18vw, 255px);
+
+  line-height: 1;
+
+  text-shadow:
+    0 8px 22px rgba(88, 53, 12, 0.20);
+}
+
+
+/* =========================================================
+   MANDALA
+========================================================= */
+
+.mandala {
+  position: absolute;
+
+  width: 150px;
+  height: 150px;
+
+  border: 1px solid rgba(126, 80, 20, 0.14);
+
+  border-radius: 50%;
+
+  opacity: 0.65;
+}
+
+.mandala-left {
+  top: -65px;
+  left: -65px;
+}
+
+.mandala-right {
+  right: -65px;
+  bottom: -65px;
+}
+
+
+/* =========================================================
+   WELCOME BADGE
+========================================================= */
+
+.welcome-image-badge {
+  position: absolute;
+
+  left: 50%;
+  bottom: 20px;
+
+  z-index: 5;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 10px 17px;
+
+  border: 1px solid rgba(255, 255, 255, 0.45);
+
+  border-radius: 50px;
+
+  background: rgba(92, 59, 20, 0.42);
+
+  backdrop-filter: blur(7px);
+
+  color: #fff;
+
+  font-size: 12px;
+
+  white-space: nowrap;
+
+  transform: translateX(-50%);
+}
+
+.badge-symbol {
+  color: #f5d18d;
+
+  font-family: Georgia, serif;
+
+  font-size: 20px;
+}
+
+
+/* =========================================================
+   WELCOME CONTENT
+========================================================= */
+
+.section-label {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  color: #ca7512;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.welcome-content h2 {
+  margin: 0 0 24px;
+
+  color: #342c27;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size: clamp(38px, 4vw, 52px);
+
+  font-weight: 600;
+
+  line-height: 1.18;
+}
+
+.welcome-content h2 span {
+  color: #c97614;
+}
+
+.welcome-content p {
+  margin: 0 0 17px;
+
+  color: #726960;
+
+  font-size: 15px;
+
+  line-height: 1.85;
+}
+
+
+/* =========================================================
+   TEXT BUTTON
+========================================================= */
+
+.text-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin-top: 7px;
+
+  color: #c5700d;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+.text-btn svg {
+  font-size: 11px;
+
+  transition: transform 0.25s ease;
+}
+
+.text-btn:hover svg {
+  transform: translateX(5px);
+}
+
+
+/* =========================================================
+   SERVICES SECTION
+========================================================= */
+
+.services-section {
+  padding: 95px 0 105px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #faf5ed 0%,
+      #fffdf9 100%
+    );
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.section-heading {
+  max-width: 750px;
+
+  margin: 0 auto 50px;
+
+  text-align: center;
+}
+
+.section-heading h2 {
+  margin: 0;
+
+  color: #342c27;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size: clamp(38px, 4vw, 50px);
+
+  line-height: 1.18;
+
+  font-weight: 600;
+}
+
+.section-heading > p {
+  margin: 0;
+
+  color: #7b7269;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   HEADING DIVIDER
+========================================================= */
+
+.heading-divider {
+  width: 230px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  margin: 18px auto 17px;
+}
+
+.heading-divider span {
+  height: 1px;
+
+  flex: 1;
+
+  background: #d8ad70;
+}
+
+.heading-divider strong {
+  color: #c97815;
+
+  font-family: Georgia, serif;
+
+  font-size: 22px;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   SERVICES GRID
+========================================================= */
+
+.services-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 28px;
+
+  align-items: stretch;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.service-card {
+  min-width: 0;
+
+  overflow: hidden;
+
+  border: 1px solid #eee3d7;
+
+  border-radius: 10px;
+
+  background: #fff;
+
+  box-shadow:
+    0 10px 30px rgba(46, 34, 23, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 18px 40px rgba(46, 34, 23, 0.14);
+}
+
+
+/* =========================================================
+   SERVICE IMAGES
+========================================================= */
+
+.service-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 220px;
+
+  overflow: hidden;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  background-position: center;
+}
+
+.langar-image {
+  background-image: url("/langar.avif");
+}
+
+.healthcare-image {
+  background-image: url("/healthcare.jpg");
+}
+
+.learning-image {
+  background-image: url("/classes.jpg");
+}
+
+.coffee-image {
+  background-image: url("/coffee-cafe.png");
+}
+
+
+/* =========================================================
+   IMAGE OVERLAY
+========================================================= */
+
+.service-image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(26, 20, 15, 0.35),
+      transparent 65%
+    );
+}
+
+
+/* =========================================================
+   SERVICE CONTENT
+========================================================= */
+
+.service-content {
+  min-height: 160px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 16px;
+
+  padding: 23px 22px 26px;
+}
+
+
+/* =========================================================
+   SERVICE ICON
+========================================================= */
+
+.service-icon {
+  width: 45px;
+  height: 45px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #e8bd83;
+
+  border-radius: 50%;
+
+  background: #fff9ef;
+
+  color: #c97815;
+
+  font-size: 17px;
+}
+
+
+/* =========================================================
+   SERVICE INFO
+========================================================= */
+
+.service-info {
+  min-width: 0;
+
+  flex: 1;
+}
+
+.service-info h3 {
+  margin: 0 0 9px;
+
+  color: #342c27;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size: 21px;
+
+  font-weight: 700;
+
+  line-height: 1.25;
+}
+
+.service-info p {
+  margin: 0;
+
+  color: #786f67;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   VIEW ALL BUTTON
+========================================================= */
+
+.center-button {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 45px;
+}
+
+.outline-btn {
+  min-height: 48px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 0 25px;
+
+  border: 1px solid #d58a37;
+
+  border-radius: 6px;
+
+  background: #fff;
+
+  color: #b9680c;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.outline-btn:hover {
+  background: #c97612;
+
+  color: #fff;
+
+  transform: translateY(-2px);
+}
+
+.outline-btn svg {
+  transition: transform 0.25s ease;
+}
+
+.outline-btn:hover svg {
+  transform: translateX(4px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .home-page .container {
+    width: min(94%, 900px);
+  }
+
+  .home-hero {
+    min-height: 620px;
+  }
+
+  .welcome-grid {
+    gap: 45px;
+  }
+
+  .welcome-content h2 {
+    font-size: 40px;
+  }
+
+  .service-image {
+    height: 190px;
+  }
+
+  .service-content {
+    padding: 20px 17px 22px;
+  }
+
+  .service-info h3 {
+    font-size: 18px;
+  }
+
+  .service-info p {
+    font-size: 12px;
+  }
+
+  /* Punjabi text */
+  .hero-punjabi {
+    font-size: 32px;
+  }
+
+  /* ੴ */
+  .hero-punjabi strong {
+    font-size: 68px;
+  }
+
+  /* Description */
+  .hero-content > p.hero-subtitle {
+    font-size: 19px;
+  }
+}
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .home-page .container {
+    width: calc(100% - 36px);
+  }
+
+  .home-hero {
+    min-height: 600px;
+
+    padding-top: 80px;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+
+    white-space: nowrap;
+  }
+
+  .hero-punjabi {
+    font-size: 30px;
+
+    gap: 18px;
+  }
+
+  .hero-punjabi strong {
+    font-size: 62px;
+  }
+
+  .hero-content > p.hero-subtitle {
+    max-width: 680px;
+
+    font-size: 18px;
+
+    line-height: 1.75;
+  }
+
+  .quick-actions {
+    grid-template-columns: 1fr;
+
+    border-radius: 9px;
+  }
+
+  .today-panel { grid-template-columns: 1fr; gap: 30px; padding: 35px; }
+
+  .quick-card {
+    border-right: none;
+
+    border-bottom: 1px solid #eee5da;
+  }
+
+  .quick-card:last-child {
+    border-bottom: none;
+  }
+
+  .welcome-grid {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .welcome-image {
+    max-width: 700px;
+
+    width: 100%;
+
+    margin: 0 auto;
+
+    min-height: 430px;
+  }
+
+  .welcome-content {
+    max-width: 720px;
+
+    margin: 0 auto;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+
+    max-width: 620px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service-image {
+    height: 240px;
+  }
+
+  .service-content {
+    min-height: auto;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .home-page .container {
+    width: calc(100% - 28px);
+  }
+
+  .home-hero {
+    min-height: 620px;
+
+    padding:
+      75px 16px
+      95px;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(25, 19, 15, 0.82),
+        rgba(25, 19, 15, 0.60)
+      );
+  }
+
+  .hero-tag {
+    margin-bottom: 18px;
+
+    padding: 7px 13px;
+
+    font-size: 10px;
+  }
+
+  .hero-tag-icon {
+    font-size: 17px;
+  }
+
+
+  /* =====================================================
+     HERO TITLE
+  ===================================================== */
+
+  .hero-content h1 {
+    font-size: 38px;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.5px;
+
+    white-space: normal;
+  }
+
+
+  /* =====================================================
+     PUNJABI TEXT
+  ===================================================== */
+
+  .hero-punjabi {
+
+    margin: 14px auto 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    color: #ffe5b0;
+
+    font-family:
+      "Noto Sans Gurmukhi",
+      "Raavi",
+      "Arial Unicode MS",
+      sans-serif;
+
+    /* Larger but still mobile-friendly */
+    font-size: 27px;
+
+    font-weight: 600;
+
+    line-height: 1.6;
+
+    text-align: center;
+
+    text-shadow:
+      0 3px 12px rgba(0, 0, 0, 0.35);
+  }
+
+
+  /* =====================================================
+     LARGE ੴ SYMBOL
+  ===================================================== */
+
+  .hero-punjabi strong {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #efa33a;
+
+    font-family: Georgia, serif;
+
+    /* Clearly larger than Punjabi text */
+    font-size: 58px;
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    text-shadow:
+      0 4px 15px rgba(0, 0, 0, 0.35);
+  }
+
+
+  /* =====================================================
+     DIVIDER
+  ===================================================== */
+
+  .hero-divider {
+    width: 190px;
+
+    margin: 18px auto;
+  }
+
+
+  /* =====================================================
+     HERO DESCRIPTION
+  ===================================================== */
+
+  .hero-content > p.hero-subtitle {
+
+    max-width: 340px;
+
+    font-size: 16px;
+
+    line-height: 1.75;
+
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
+  .home-hero {
+    background-position: 34% center;
+  }
+
+  .today-section { padding: 20px 0 60px; }
+  .today-panel { padding: 28px 20px; }
+  .schedule-grid { grid-template-columns: 1fr; }
+  .schedule-item { min-height: 82px; flex-direction: row; align-items: center; justify-content: flex-start; }
+
+  .desktop-break {
+    display: none;
+  }
+
+
+  /* =====================================================
+     HERO BUTTONS
+  ===================================================== */
+
+  .hero-buttons {
+    width: 100%;
+
+    max-width: 300px;
+
+    flex-direction: column;
+
+    margin: 25px auto 0;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+  }
+
+
+  /* =====================================================
+     QUICK ACTIONS
+  ===================================================== */
+
+  .quick-actions-section {
+    margin-top: -35px;
+
+    padding-bottom: 60px;
+  }
+
+  .quick-card {
+    min-height: 82px;
+
+    padding: 15px;
+  }
+
+  .quick-icon {
+    width: 43px;
+    height: 43px;
+
+    font-size: 16px;
+  }
+
+  .quick-text h3 {
+    font-size: 15px;
+  }
+
+  .quick-text p {
+    font-size: 10px;
+  }
+
+
+  /* =====================================================
+     WELCOME
+  ===================================================== */
+
+  .welcome-section {
+    padding: 65px 0 75px;
+  }
+
+  .welcome-image {
+    min-height: 330px;
+  }
+
+  .ik-onkar-large {
+    font-size: 180px;
+  }
+
+  .welcome-content h2 {
+    font-size: 32px;
+  }
+
+  .welcome-content p {
+    font-size: 13px;
+
+    line-height: 1.75;
+  }
+
+
+  /* =====================================================
+     SERVICES
+  ===================================================== */
+
+  .services-section {
+    padding: 65px 0 75px;
+  }
+
+  .section-heading {
+    margin-bottom: 35px;
+  }
+
+  .section-heading h2 {
+    font-size: 32px;
+  }
+
+  .section-heading > p {
+    font-size: 12px;
+  }
+
+  .service-image {
+    height: 210px;
+  }
+
+  .service-content {
+    padding: 18px;
+  }
+
+  .service-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .service-info h3 {
+    font-size: 18px;
+  }
+
+  .service-info p {
+    font-size: 11px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .home-hero {
+    min-height: 600px;
+
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+
+    white-space: normal;
+  }
+
+  .hero-punjabi {
+    font-size: 23px;
+
+    gap: 8px;
+  }
+
+  .hero-punjabi strong {
+    font-size: 50px;
+  }
+
+  .hero-content > p.hero-subtitle {
+    max-width: 300px;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+  .welcome-image {
+    min-height: 285px;
+  }
+
+  .ik-onkar-large {
+    font-size: 150px;
+  }
+
+  .welcome-content h2 {
+    font-size: 28px;
+  }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY / REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .hero-content {
+    animation: none;
+  }
+
+  .quick-card,
+  .service-card,
+  .primary-btn,
+  .secondary-btn,
+  .text-btn,
+  .outline-btn {
+    transition: none;
+  }
+}
+
+/* =========================================================
+   READABILITY PASS
+========================================================= */
+
+.home-page .container {
+  width: min(1320px, calc(100% - 48px));
+}
+
+.hero-tag {
+  padding: 11px 22px;
+  font-size: 16px;
+}
+
+.hero-content h1 {
+  font-size: clamp(48px, 5.2vw, 76px);
+  line-height: 1.12;
+}
+
+.hero-punjabi {
+  font-size: clamp(24px, 2.2vw, 34px);
+}
+
+.hero-content > p.hero-subtitle {
+  font-size: clamp(18px, 1.4vw, 21px);
+  line-height: 1.7;
+}
+
+.primary-btn,
+.secondary-btn,
+.outline-btn {
+  min-height: 54px;
+  padding-inline: 28px;
+  font-size: 16px;
+}
+
+.quick-card {
+  min-height: 124px;
+  padding: 24px 30px;
+}
+
+.quick-icon { width: 58px; height: 58px; font-size: 21px; }
+.quick-text h3 { font-size: 21px; }
+.quick-text p { font-size: 15px; }
+
+.today-intro p,
+.welcome-content p {
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.section-label {
+  font-size: 14px;
+}
+
+.schedule-item {
+  min-height: 138px;
+}
+
+.schedule-item small { font-size: 12px; }
+.schedule-item strong { font-size: 17px; line-height: 1.45; }
+
+.welcome-section {
+  padding: 80px 0 90px;
+}
+
+.welcome-content h2 {
+  font-size: clamp(42px, 4vw, 58px);
+}
+
+.text-btn {
+  min-height: 44px;
+  font-size: 16px;
+}
+
+.services-section {
+  padding: 85px 0 95px;
+}
+
+.section-heading {
+  max-width: 820px;
+}
+
+.section-heading > p {
+  font-size: 17px;
+}
+
+.services-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px;
+}
+
+.service-image {
+  height: 245px;
+}
+
+.service-content {
+  min-height: 190px;
+  padding: 28px 25px 30px;
+}
+
+.service-icon { width: 52px; height: 52px; font-size: 20px; }
+.service-info h3 { font-size: 24px; }
+.service-info p { font-size: 15px; line-height: 1.75; }
+
+@media (max-width: 1000px) {
+  .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 700px) {
+  .home-page .container { width: calc(100% - 32px); }
+  .hero-content h1 { font-size: clamp(38px, 11vw, 52px); }
+  .hero-punjabi { font-size: 23px; }
+  .hero-content > p.hero-subtitle { font-size: 17px; }
+  .quick-text h3 { font-size: 18px; }
+  .quick-text p { font-size: 14px; }
+  .today-intro p, .welcome-content p, .section-heading > p { font-size: 16px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .service-info p { font-size: 15px; }
+}
+
+/* Balanced four-card community services grid */
+.services-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 1120px;
+  margin-inline: auto;
+}
+
+@media (max-width: 700px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    max-width: 620px;
+  }
+}
+
+/* Preview: Waheguru blessing artwork is intentionally applied only to Home. */
+.home-page {
+  background:
+    linear-gradient(rgba(255, 253, 249, 0.88), rgba(255, 253, 249, 0.88)),
+    url("/waheguru-blessings-background.png") center top / min(1500px, 125vw) auto repeat-y;
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    background-size: 1050px auto;
+  }
+}
+
+.playroom-image {
+  background-image: url("/kids-playroom.png");
+}
+
+.library-image {
+  background-image: url("/community-library.png");
+}

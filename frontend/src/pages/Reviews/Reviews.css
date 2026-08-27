@@ -1,0 +1,51 @@
+.reviews-page { padding-bottom: 100px; background: #fffdf9; color: #342c27; }
+.reviews-hero { min-height: 315px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:65px 24px; text-align:center; background:linear-gradient(rgba(16,42,67,.76),rgba(16,42,67,.74)),url("/golden-temple-home-hero.png") center/cover; color:#fff; }
+.reviews-hero svg { color:#efb34e; margin-bottom:13px; }
+.reviews-hero span,.form-eyebrow { color:#d98a23; font-size:13px; font-weight:800; letter-spacing:1.8px; }
+.reviews-hero h1 { margin:9px 0 13px; color:#fff; font:600 clamp(40px,5vw,62px) "Playfair Display",Georgia,serif; }
+.reviews-hero p { margin:0; font-size:18px; }
+.reviews-shell { width:min(1320px,calc(100% - 48px)); margin:60px auto 0; }
+.reviews-toolbar { display:flex; align-items:center; justify-content:space-between; gap:25px; margin-bottom:28px; }
+.reviews-toolbar h2 { margin:0 0 4px; font:600 34px "Playfair Display",Georgia,serif; }
+.reviews-toolbar p { margin:0; color:#746b63; font-size:16px; }
+.language-setting { display:flex; align-items:center; gap:6px; padding:6px; border:1px solid #e5d5bf; border-radius:11px; background:#fff; color:#b66d15; }
+.language-setting button { min-height:42px; padding:0 16px; border-radius:8px; color:#655b52; font-size:15px; font-weight:700; }
+.language-setting button.active { background:#102a43; color:#fff; }
+.reviews-layout { display:grid; grid-template-columns:minmax(0,1.4fr) minmax(360px,.75fr); gap:30px; align-items:start; }
+.review-list { display:grid; gap:18px; }
+.review-card,.review-form-card { padding:28px; border:1px solid #eadfce; border-radius:15px; background:#fff; box-shadow:0 10px 28px rgba(48,38,28,.07); }
+.review-card-top { display:flex; align-items:center; gap:13px; }
+.review-avatar { width:50px; height:50px; display:flex; align-items:center; justify-content:center; flex:0 0 auto; border-radius:50%; background:#fff0d6; color:#b66d15; font-size:20px; font-weight:800; }
+.review-card h3 { margin:0 0 4px; font-size:19px; }
+.stars { display:flex; color:#dfa03f; }
+.review-language-icon { margin-left:auto; color:#8c8177; }
+.review-card>p { margin:20px 0 0; color:#5f574f; font-size:17px; line-height:1.75; }
+.review-card>p.punjabi-review,.punjabi-input { font-family:"Noto Sans Gurmukhi","Raavi",sans-serif; }
+.translation-note { display:block; margin-top:12px; color:#9a6b2d; font-size:13px; }
+.review-state { padding:40px; border:1px dashed #d9c5a9; border-radius:14px; text-align:center; color:#746b63; }
+.review-form-card { position:sticky; top:115px; padding:32px; }
+.review-form-card h2 { margin:7px 0 9px; font:600 31px "Playfair Display",Georgia,serif; }
+.review-form-card>p { margin:0 0 24px; color:#746b63; font-size:15px; line-height:1.65; }
+.review-form-card form { display:grid; gap:18px; }
+.review-form-card label { display:grid; gap:8px; color:#443a32; font-size:15px; font-weight:700; }
+.review-form-card label small { color:#897d73; font-weight:500; }
+.review-form-card input,.review-form-card select,.review-form-card textarea { width:100%; box-sizing:border-box; border:1px solid #d9cbb9; border-radius:9px; background:#fffdf9; padding:13px 14px; color:#342c27; font:16px "DM Sans",sans-serif; outline:none; }
+.review-form-card input,.review-form-card select { height:52px; }
+.review-form-card textarea { resize:vertical; line-height:1.55; }
+.review-form-card textarea.punjabi-input,.punjabi-help { font-family:"Noto Sans Gurmukhi","Raavi",sans-serif; }
+.punjabi-help { line-height:1.6; }
+.review-form-card input:focus,.review-form-card select:focus,.review-form-card textarea:focus { border-color:#c77a1b; box-shadow:0 0 0 3px rgba(199,122,27,.12); }
+.review-form-card form>button { min-height:54px; display:flex; align-items:center; justify-content:center; gap:9px; border-radius:9px; background:#c77718; color:#fff; font-size:16px; font-weight:800; }
+.review-form-card form>button:disabled { opacity:.65; }
+.review-message { margin:0 0 18px; padding:12px 14px; border-radius:8px; font-size:14px; }
+.review-message.error { background:#fff0f0; color:#a52820; }
+.review-message.success { background:#edf9f0; color:#226c3a; }
+@media(max-width:900px){.reviews-layout{grid-template-columns:1fr}.review-form-card{position:static}.reviews-toolbar{align-items:flex-start}}
+@media(max-width:600px){.reviews-shell{width:calc(100% - 30px);margin-top:35px}.reviews-toolbar{flex-direction:column}.language-setting{width:100%;box-sizing:border-box}.language-setting button{flex:1}.review-card,.review-form-card{padding:22px}.reviews-hero p{font-size:16px}}
+
+/* Match the shared Contact/About/Services banner size */
+.reviews-hero {
+  height: 40vh;
+  min-height: 350px;
+  box-sizing: border-box;
+}
