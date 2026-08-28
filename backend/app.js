@@ -29,9 +29,9 @@ const origins = process.env.CLIENT_URL
           .split(",")
           .map((url) => url.trim())
     : [
-        "http://localhost:5173",
-        "https://www.sahibsgurudwara.com",
-        "https://sahibsgurudwara.com",
+        // "http://localhost:5173",
+        // "https://www.sahibsgurudwara.com",
+        // "https://sahibsgurudwara.com",
       ];
 
 app.use(helmet());
