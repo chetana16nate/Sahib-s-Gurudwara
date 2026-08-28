@@ -21,24 +21,14 @@ import {
 const app = express();
 
 /* =========================================================
-   CORS
+   CORS  –  open to all origins
 ========================================================= */
-
-const origins = process.env.CLIENT_URL
-    ? process.env.CLIENT_URL
-          .split(",")
-          .map((url) => url.trim())
-    : [
-        // "http://localhost:5173",
-        // "https://www.sahibsgurudwara.com",
-        // "https://sahibsgurudwara.com",
-      ];
 
 app.use(helmet());
 
 app.use(
     cors({
-        origin: origins,
+        origin: true,
         credentials: true,
     })
 );
